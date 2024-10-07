@@ -1,0 +1,332 @@
+<!DOCTYPE html> <!-- Déclaration du type de document comme HTML5 -->
+<!-- Balise racine de l'ensemble du document -->
+<html lang="fr">
+  <!-- Balise contenant les métadonnées du document -->
+  <head>
+    <!-- Titre affiché dans l'onglet du navigateur -->
+    <title>Bienfaits de l'huile d'olive by JFB</title>
+    
+    <!-- Encodage des caractères utilisé dans la page -->
+    <meta charset="UTF-8">
+    
+    <!-- Meta description pour le référencement SEO -->
+    <meta name="description" content="Découvrez une huile d'olive authentique au coeur de la Provence, emportez l'essence du sud dans vos assiettes,  decouvrez les savoirs faire et la fabrication de l'huile d'olive de la famille Bordin à Flayosc en provence,  ,">
+    
+    <!-- Meta keywords pour le référencement SEO -->
+    <meta name="keywords" content="huile d'olive, producteur, recoltant, olives, oliviers, provence, moulin à huile, saveurs de Provence">
+    
+    <!-- Meta robots pour le référencement SEO -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Meta auteur pour l'attribution du contenu -->
+    <meta name="author" content="Danka Osmak">
+    
+    <!-- Meta viewport pour une meilleure adaptation mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Canonical URL pour éviter le contenu dupliqué -->
+     <!-- il faucra mettre le lien vers notre site losrqu'il sera en ligne -->
+    <!--<link rel="canonical" href="https://www.">-->
+    
+    <!-- Open Graph meta tags pour un meilleur partage sur les réseaux sociaux
+    <meta property="og:title" content="Huile d'olive direct producteur en Provence">
+    <meta property="og:description" content="Une huile d'olive de Porvence authentique en directe du producteur varois">
+    <meta property="og:image" content="https://www.">
+    <meta property="og:url" content="https://www.">
+    <meta property="og:type" content="website"> -->
+    
+    <!-- Attention MANQUE DESCRITION TWITTER ET CERTAINES CORRECTION SEO ( cf Jean claude)-->
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="aos/aos.css" rel="stylesheet">
+    <!-- lien Chet GPT <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">-->
+    <link href="glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!--Lien vers fontawesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+    <!--Lien vers le css bootstrap-->
+    <!--version justin <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Lien tlecharge via chat-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">-->
+  
+    <!--<style>
+      .zoom-on-hover {
+      transition: transform 0.3s ease;
+    }
+    
+    .zoom-on-hover:hover {
+      transform: scale(1.3);
+    }
+    
+    .member-img {
+      overflow: hidden; /* Cela masquera la partie de l'image qui sort du conteneur */
+    }
+    
+
+    </style>-->
+  
+  </head>
+  
+
+
+
+  <!-- Contient tout le contenu visible de la page -->
+  <body class="bienfaits-details-page">
+    <header id="header" class="header fixed-top">
+      <div class="branding d-flex align-items-center">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+          
+              <a href="index.html" aria-label="Logo du site" class="logo d-flex align-items-center me-auto">
+                <img src="images/LOgo2Blanc-isole - 3_Plan de travail 1.png" class="img-fluid rounded" alt="Logo de l'entreprise familiale bordin">
+              </a>
+              
+          
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="index.html#about" aria-label="Lien vers la page à propos"> À propos</a></li>
+                  <li class="dropdown"><a href="index.html#shop" aria-label="dropdown"><span>Boutique</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="details-produit1.html" aria-label="dropdown">Huile à l'Ancienne</a></li>
+                      <li><a href="details-produit2.html" aria-label="dropdown">Huile Classique</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="index.html#informations" aria-label="Lien vers les informations"><span>Informations</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="partenaires.html" aria-label="dropdown">Nos partenaires</a></li>
+                      <li><a href="#bienfaits" aria-label="dropdown">Bienfaits de l'huile d'olive</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="index.html#fabrication" aria-label="dropdown"><span>Fabrication</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="fabrication.html#recolte" aria-label="dropdown">Récolte</a></li>
+                      <li><a href="fabrication.html#Trituration" aria-label="dropdown">Trituration</a></li>
+                      <li><a href="fabrication.html#Extraction" aria-label="dropdown">Extraction</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="index.html#faq" aria-label="lien vers le faq">FAQ</a></li>
+                  <li><a href="index.html#contact" aria-label="lien vers la page de contact">Contact/Accès</a></li>
+                  <li class="dropdown" ><button class="button-nav"><i class="fas fa-user-circle fa-1.7x"></i></button><!-- Icône de buste avec une taille de 3x -->
+                  <ul><li style="text-align:left;  padding-left: 8px; font-weight: 50" > Mon compte</li></ul></li>
+                <li><button id="langue_en" class="button-nav" onclick="changelangage('en')">EN</button></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+            </div> 
+        </div>
+      </div>
+    </header>
+ 
+  <main class="main">
+   
+<div class="page-title">
+<section class="bienfaits-hero">
+  <div class="bienfaits-page-hero">
+    <div class="container-fluid">
+
+      <img src="images/Montage.jpg" alt="Producteur d'huile d'olive" class="bienfaits-page-hero-image">
+      <a href="#bienfaits-details-page">
+        <div class="bienfaits-page-hero-text">
+          <h1>Les bienfaits de l'huile d'olive<br></h1>
+        </div></a>
+    </div>
+  </div>
+    <nav class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#informations">Informations</a></li>
+          <li class="current">Les Bienfaits de l'huile d'olive</li>
+        </ol>
+      </div>
+    </nav>
+</section>
+</div>
+   <section id="bienfaits-details-page">
+    <div class="container">
+      <h2>Connaissez-vous toutes les utilisations et les avantages qu'apporte l'huile d'olive ?</h2>
+      <div class="container">
+        <p>L'huile d'olive est utilisée depuis des millénaires pour ses nombreux bienfaits, tant en usage interne (absorption) qu'en usage externe (application sur la peau). Elle est réputée pour ses propriétés nutritives, curatives et esthétiques. Voici un aperçu des bienfaits associés à chaque usage.</p>
+        <div class="row gy-4" >
+            <div class="col-md-6 col-sm-8">
+              <div class="bienfaits-items position-relative">
+                <h3>Bienfaits de l'huile d'olive en usage interne (absorption)</h3>
+                <p>Richesse en antioxydants : L'huile d'olive est riche en polyphénols et en vitamine E, qui sont de puissants antioxydants. Ces composés aident à combattre les radicaux libres dans le corps, réduisant ainsi le risque de maladies chroniques comme le cancer et les maladies cardiaques.</p>
+                <a href="#usage-interne" class="readmore stretched-link">Lire la suite <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="bienfaits-items position-relative">
+                <h3>Bienfaits de l'huile d'olive en usage externe (application cutanée)</h3>
+                <p>Hydratation de la peau : L'huile d'olive est un excellent hydratant naturel. Elle pénètre facilement la peau et aide à restaurer la barrière lipidique, prévenant ainsi la perte d'humidité. Elle est particulièrement bénéfique pour les peaux sèches et les zones rugueuses.</p>
+                <a href="#usage-externe" class="readmore stretched-link">Lire la suite <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+          <br>
+          <p>L'huile d'olive, qu'elle soit consommée ou appliquée, est un produit naturel aux multiples vertus. Elle favorise une bonne santé globale lorsqu'elle est intégrée à une alimentation équilibrée, tout en étant un allié précieux pour la peau et les cheveux en usage cosmétique.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="usage-interne" class="bienfaits-details">
+
+            <div class="container">
+              <div class="bienfaits-items-titre">
+                  <h3>Bienfaits de l'huile d'olive en usage interne (absorption)</h3>
+                </div>
+            
+                    <div class="bienfaits-page-items container">
+                      <img src="images/glass-olive-silviarita.jpg" class="img-fluid rounded" alt="image d'une mini bouteille d'huile d'olive entourée de fleur">
+                      <p><u><strong>Richesse en antioxydants :</strong></u><br>
+                        L'huile d'olive est riche en polyphénols et en vitamine E, qui sont de puissants antioxydants. Ces composés aident à combattre les radicaux libres dans le corps, réduisant ainsi le risque de maladies chroniques comme le cancer et les maladies cardiaques.
+                      <br><br><u><strong> Santé cardiaque :</strong> </u> <br>
+                        L'huile d'olive est une source d'acides gras mono-insaturés, notamment l'acide oléique, qui est bénéfique pour la santé cardiovasculaire. Elle aide à réduire le mauvais cholestérol (LDL) et à augmenter le bon cholestérol (HDL), réduisant ainsi les risques de maladies cardiaques et d'accidents vasculaires cérébraux.
+                      <br><br><u><strong> Anti-inflammatoire : </strong></u><br> 
+                      Les polyphénols présents dans l'huile d'olive, comme l'oleocanthal, ont des effets anti-inflammatoires similaires à l'ibuprofène. Une consommation régulière peut aider à réduire l'inflammation dans le corps, bénéfique pour les personnes souffrant d'arthrite ou d'autres maladies inflammatoires.
+                      <br><br><u><strong>Soutien digestif : </strong> </u><br> 
+                      L'huile d'olive est douce pour le système digestif et peut aider à stimuler la production de bile. Elle est aussi utilisée pour améliorer la digestion et soulager la constipation, grâce à son effet lubrifiant sur le tractus intestinal.
+                      <br><br><u><strong>Prévention du diabète de type 2 :</strong> </u><br> 
+                      Certaines études suggèrent que la consommation régulière d'huile d'olive peut améliorer la sensibilité à l'insuline et aider à réguler la glycémie, ce qui est bénéfique pour les personnes à risque de diabète de type 2.
+                      <br><br><u><strong>Santé cérébrale : </strong> </u><br>
+                      Grâce à ses antioxydants et ses graisses saines, l'huile d'olive joue un rôle dans la protection des cellules cérébrales contre le vieillissement et peut même contribuer à réduire le risque de maladies neurodégénératives comme la maladie d'Alzheimer.</p>
+                    </div>
+            </div>
+      </section>
+
+
+
+<section id="usage-externe" class="bienfaits-details">
+
+    <div class="container">
+              <div class="bienfaits-items-titre">
+                  <h3>Bienfaits de l'huile d'olive en usage externe (application cutanée)</h3>
+                </div>
+            
+                    <div class="bienfaits-page-items container">
+                      <img src="images/cbd-oil-erin stone-pix2.jpg" class="img-fluid rounded" alt="image d'une pipette d'huile d'olive coulant dans une main">
+                      <p><u><strong>Hydratation de la peau :</strong></u><br>
+                        L'huile d'olive est un excellent hydratant naturel. Elle pénètre facilement la peau et aide à restaurer la barrière lipidique, prévenant ainsi la perte d'humidité. Elle est particulièrement bénéfique pour les peaux sèches et les zones rugueuses.                      
+                        <br><br><u><strong> Effet anti-âge :</strong> </u> <br>
+                        Les antioxydants, tels que la vitamine E, présents dans l'huile d'olive aident à protéger la peau contre les dommages causés par les radicaux libres, responsables du vieillissement prématuré. L'application régulière d'huile d'olive peut aider à atténuer les rides et donner à la peau une apparence plus jeune et plus lisse.
+                        <br><br><u><strong> Soin des cheveux : </strong></u><br> 
+                         L'huile d'olive est utilisée comme soin capillaire pour nourrir et hydrater le cuir chevelu et les cheveux. Elle peut aider à traiter les pointes fourchues, les cheveux secs et cassants, et améliorer la brillance des cheveux. De plus, elle peut soulager les cuirs chevelus secs ou irrités.  
+                        <br><br><u><strong>Cicatrisation et réparation cutanée : </strong> </u><br>  
+                        Grâce à ses propriétés anti-inflammatoires et réparatrices, l'huile d'olive peut aider à apaiser les irritations cutanées, les brûlures légères et favoriser la cicatrisation des petites coupures ou écorchures. Elle est également utilisée pour traiter les problèmes de peau comme l'eczéma et le psoriasis.
+                        <br><br><u><strong>Soin des ongles :</strong> </u><br> 
+                        L'huile d'olive est bénéfique pour la santé des ongles et des cuticules. Elle hydrate et renforce les ongles cassants tout en adoucissant les cuticules.
+                        <br><br><u><strong>Propriétés antibactériennes : </strong> </u><br>
+                        Certaines recherches suggèrent que l'huile d'olive possède des propriétés antibactériennes. Elle peut être utilisée pour nettoyer la peau en douceur et réduire le risque d'infections mineures sur les coupures ou les zones irritées.
+                    </div>
+            </div>
+      </section>
+
+
+
+
+       
+ 
+
+
+
+
+
+
+  
+
+  
+  
+  </main>
+  
+  
+  
+  
+  
+  
+  <footer>
+  
+  
+  
+    <div class="container position-relative d-flex align-items-center justify-content-center">
+      <nav class="navmenu-foot">
+        <ul>
+          <li><a href="index.html#about" aria-label="Lien vers la page à propos"> À propos</a></li>
+          <li><a href="index.html#shop" arial-label="Lien vers la boutique en ligne">Boutique</a></li>
+          <li><a href="index.html#fabrication" aria-label="lien vers le processus de fabrication">Fabrication</a></li>
+          <li><div class="logoFOOT"><a href="index.html" aria-label="Logo du site"><img src="images/Logoisole.svg" alt="LOGO"></a></div></li>
+          <li><a href="partenaires.html" aria-label="Lien vers les partenaires">Nos partenaires</a></li>
+          <li><a href="index.html#faq" aria-label="Lien vers les FAQ">FAQ</a></li>
+          <li><a href="index.html#contact" aria-label="lien vers la page de contact">Contact</a> </li>
+        </ul>
+        <div  class="logoFOOT2 container position-relative d-flex align-items-center justify-content-center"><a href="index.html" aria-label="Logo du site" class="logoFOOT"><img src="images/Logoisole.svg" alt="LOGO"></a></div>
+      </nav>
+    </div>
+  
+   <!--<div class="circle-container">
+    <div class="demi-ligne"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="demi-ligne"></div>
+  </div>!-->
+  
+  <div class="container position-relative d-flex align-items-center ">
+    <div class="demi-ligne"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="demi-ligne"></div>
+  </div>
+  
+  
+  <div class="container position-relative d-flex align-items-center justify-content-center">
+  
+    <nav>
+      <ul  class="navbar">
+        <li>© JF Bordin - 2024 - tous droits réservés</li>
+        <li><a href="Mentions-legales.html" aria-label="Lien vers les mentions légales">  Mentions légales  </a></li>
+        <li><a href="politique-de-confidentialite.html" aria-label="Lien vers la politique de confidentialite">Politique de confidentialite</a></li>
+        <li><a href="CGV.html" aria-label="Lien vers les CGV">CGV</a></li>
+      </ul>
+  
+    </nav>
+  </footer>  
+  
+   <!-- Bouton retour haut de page. -->
+   <a href="#" aria-label="Bouton haut de page" title="Remonter" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  
+   <script src="aos/aos.js"></script>
+   <script src="purecounter/purecounter_vanilla.js"></script>
+  <script src="JS/script.js"></script>
+  <!--Bootstrap lien vers scripte, si pblre, retirer le popper-->
+  <!--version justin <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <!-- lien vers les Js compiles et mimifies groupeés incluent popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="isotope-layout/isotope.pkgd.min.js"></script>
+  <!-- lien GPT <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>-->
+  <script src="glightbox/js/glightbox.min.js"></script>
+  </body>
+  </html>
+  
+  
+  

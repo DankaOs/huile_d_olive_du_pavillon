@@ -1,0 +1,696 @@
+<!DOCTYPE html> <!-- Déclaration du type de document comme HTML5 -->
+<!-- Balise racine de l'ensemble du document -->
+<html lang="en">
+  <!-- Balise contenant les métadonnées du document -->
+  <head>
+    <!-- Titre affiché dans l'onglet du navigateur -->
+    <title>OliveOil from the Pavillon by JFB</title>
+    
+    <!-- Encodage des caractères utilisé dans la page -->
+    <meta charset="UTF-8">
+    
+    <!-- Meta description pour le référencement SEO -->
+    <meta name="description" content="Découvrez une huile d'olive authentique au coeur de la Provence, emportez l'essence du sud dans vos assiettes,  decouvrez les savoirs faire et la fabrication de l'huile d'olive de la famille Bordin à Flayosc en provence,  ,">
+    
+    <!-- Meta keywords pour le référencement SEO -->
+    <meta name="keywords" content="huile d'olive, producteur, recoltant, olives, oliviers, provence, moulin à huile, saveurs de Provence">
+    
+    <!-- Meta robots pour le référencement SEO -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Meta auteur pour l'attribution du contenu -->
+    <meta name="author" content="Danka Osmak">
+    
+    <!-- Meta viewport pour une meilleure adaptation mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Canonical URL pour éviter le contenu dupliqué -->
+     <!-- il faucra mettre le lien vers notre site losrqu'il sera en ligne -->
+    <!--<link rel="canonical" href="https://www.">-->
+    
+    <!-- Open Graph meta tags pour un meilleur partage sur les réseaux sociaux
+    <meta property="og:title" content="Huile d'olive direct producteur en Provence">
+    <meta property="og:description" content="Une huile d'olive de Porvence authentique en directe du producteur varois">
+    <meta property="og:image" content="https://www.">
+    <meta property="og:url" content="https://www.">
+    <meta property="og:type" content="website"> -->
+    
+    <!-- Attention MANQUE DESCRITION TWITTER ET CERTAINES CORRECTION SEO ( cf Jean claude)-->
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="aos/aos.css" rel="stylesheet">
+    <!-- lien Chet GPT <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">-->
+    <link href="glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!--Lien vers fontawesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    
+    <!--Lien vers le css bootstrap-->
+    <!--version justin <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Lien tlecharge via chat-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">-->
+  
+
+
+  </head>
+  
+
+
+
+  <!-- Contient tout le contenu visible de la page -->
+  <body class="index-page">
+    <header id="header" class="header fixed-top">
+      <div class="branding d-flex align-items-center">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+          
+              <a href="index.html" aria-label="Logo du site lien vers laa page d'accueil" class="logo d-flex align-items-center me-auto">
+                <img src="images/LOgo2Blanc-isole - 3_Plan de travail 1.png" class="img-fluid rounded" alt="Logo de l'entreprise familiale bordin">
+              </a>
+              
+          
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="#about" aria-label="Lien vers la page à propos">About us</a></li>
+                  <li class="dropdown"><a href="#shop" aria-label="dropdown"><span>Shop</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="details-produit1.html" aria-label="dropdown">Old method Olive Oil</a></li>
+                      <li><a href="details-produit2.html" aria-label="dropdown">Modern method Olive Oil</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="" aria-label="Lien vers les informations"><span>Informations</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="partenaires.html" aria-label="dropdown">Our partnairs</a></li>
+                      <li><a href="#bienfaits" aria-label="dropdown">Olive Oil for the body</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#fabrication" aria-label="dropdown"><span>Fabrication</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="fabrication.html#recolte" aria-label="dropdown">Récolte</a></li>
+                      <li><a href="fabrication.html#Trituration" aria-label="dropdown">Trituration</a></li>
+                      <li><a href="fabrication.html#Extraction" aria-label="dropdown">Extraction</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#faq" aria-label="lien vers le faq">FAQ</a></li>
+                  <li><a href="#contact" aria-label="lien vers la page de contact">Contact/Accès</a></li>
+                  <li class="dropdown" ><button class="button-nav"><i class="fas fa-user-circle fa-1.7x"></i></button><!-- Icône de compte avec facteur3-->
+                  <ul><li style="text-align:left;  padding-left: 8px; font-weight: 50; color: #f8ebe0;" > Mon compte</li></ul></li>
+                <li><button id="langue_fr"  class="button-nav"  >Fr</button></li> <!--onclick="changelangage('fr')-->
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+            </div> 
+        </div>
+      </div>
+    </header>
+  
+
+  <main class="main">
+    <section id="hero" class="hero">
+      <div class="container-fluid">
+        <img src ="images/A_picturesque_Provencal_olive_field_at_sunset,_wit.converted-recadre.png" alt="hero Image" class="hero-image">
+ 
+          <div class="hero-text"><h1 class="animated-line line1">
+          Emportez </h1>
+          <h1 class="animated-line line2">Un brin de provence</h1> 
+          <h1 class="animated-line line3"> dans votre assiette</h1>
+            <button class="cta-button shiny-cta" onclick="scrollToSection('shop')" >Découvrez nos huiles</button>
+          </div>       
+       </div>
+    
+    </section>
+
+
+
+  <section id="about" class="about">
+    <!-- Début du titre du conteneur -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Un savoir faire Familial<br></h2>
+      <p>Découvrez notre savoir-faire familial, transmis de génération en génération depuis</p>
+      <div id="yearDisplay" class="year"></div>    
+    </div>
+    <!-- Fin du titre du conteneur -->
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, odit animi sit quae eaque doloribus et excepturi a totam libero exercitationem corporis quasi incidunt aut explicabo, id ipsum itaque dolor omnis eveniet tempora? </p>
+          <p> Mollitia voluptate ipsam dolor deleniti reprehenderit, voluptatem quo assumenda amet voluptas doloremque.</p>
+          <p> Fugit tenetur error doloribus itaque laborum id laboriosam a dolore voluptatem reprehenderit natus eligendi sit, consectetur dignissimos at, ullam excepturi veniam reiciendis optio! Fuga omnis distinctio labore. Voluptate voluptatem recusandae voluptatibus mollitia in velit rem, minus, veritatis facere dolore quos aut placeat architecto adipisci ut aliquid, repellat doloribus aliquam corporis praesentium consequuntur. Quidem soluta quod vel.</p>
+        </div>
+        <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="250">
+          <img src="images/family_provencale_olive_harvest-bord.jpg" class ="img-fluid rounded-4 mb-4 custum-padding" alt="photo de famille datant des années 1930">
+        </div>
+      </div>
+    
+    <p>L'huile d'olive du Pavillon by JFB est une huile d'olive 100% naturelle, pure et authentique en vente directe du producteur. nhmhbygylgjhbhjbhlbimknfs hsvn L'huile d'olive du Pavillon by JFB est une huile d'olive 100% naturelle, pure et authentique en vente directe du producteur. nhmhbygylgjhbhjbhlbimknfs hsvn</p>
+    <p>L'huile d'olive du Pavillon by JFB est une huile d'olive 100% naturelle, pure et authentique en vente directe du producteur. nhmhbygylgjhbhjbhlbimknfs hsvn L'huile d'olive du Pavillon by JFB est une huile d'olive 100% naturelle, pure et authentique en vente directe du producteur. nhmhbygylgjhbhjbhlbimknfs hsvn</p>
+  </div>
+  </section>
+
+
+
+
+
+
+
+  <section id="shop" class="shop">
+     <!-- Début du titre du conteneur -->
+     <div class="container section-title" data-aos="fade-up">
+      <h2>Notre boutique<br></h2>
+      <p>Découvrez l'authenticité de la Provence dans chaque goutte : <br>
+     Huile d'olive extra vierge, 1<sup>ère</sup>pression à froid, directement du producteur à votre table.</p>
+    </div>
+    <!-- Fin du titre du conteneur -->
+    <div class="product-container justify-content-center " data-aos="fade-up" data-aos-delay="200">
+      <div class="product">      
+          <img src="images/oil-bottle-marokin-pix.jpg" alt="produit 1" class="product-image img-fluid mb-6">
+          <div class="product-info " data-aos="fade-up" data-aos-delay="100">
+            <h3>Huile d'olive à l'ancienne
+              <br>Méthode Traditionnelle
+            </h3>
+            <h4>1<sup>ère</sup> Pression à froid & Extra-Vierge</h4>
+            <div class="product-description">
+            <!--<p>La plus pure, notre huile d'olive vierge extra à l'ancienne est issue de méthode de culture respectueuse de l'environnement, et d'une récolte maunelle. Pressée à l'ancienne et à la main au moulin communal de Tourtour, l'huile décante ensuite naturellement. L'huile à l'ancienne du Pavillon by JFB est une huile d'olive 100% naturelle et pure. Un authentique produit de provence, en vente directe du producteur.</p>-->
+            <p>Une huile d'exception, idéale pour sublimer vos meilleurs plats.
+            <br>Les olives de nos vergers cultivés en Provence sont sélectionnés et envoyés vers un authentique moulin hydraulique du 17ème siècle, triturées à la meule de pierre et pressées aux escourtins.
+            <br>L'huile d'olive issue d'un processus lent et délicat, est 100% naturelle. Un authentique produit de Provence en vente directe du producteur.</p>
+          </div>
+            <div class="flex-row gy-2">
+              <div class="col sm-6">
+                <p class="product-info-price">À partir de 32,00 € le litre</p>
+              </div>
+              <div class="col">
+                <a href="details-produit1.html" class="product-button">Plus de détails</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="product">      
+        <img src="images/oil-bottle-marokin-pix.jpg" alt="produit 2" class="product-image img-fluid mb-6">
+        <div class="product-info " data-aos="fade-up" data-aos-delay="100">
+          <h3>Huile d'olive classique
+            <br>Méthode Moderne
+          </h3>
+          <h4>1<sup>ère</sup> Pression à froid & Extra-Vierge</h4>
+          <div class="product-description">
+          <!--<p>Un goût authentique et fruité, parfait pour les plats méditerranéens, notre huile d'olive vierge extra est issue de méthode de culture respectueuse de l'environnement, et d'une récolte maunelle. Pressée  dans un moulin moderne, l'huile décante grâce à un processus de  centrifugeuse. L'huile classique du Pavillon by JFB est une huile d'olive 100% naturelle, pure et authentique en vente directe du producteur.</p>-->
+          <p>Une huile d'olive idéale pour vos agrémenter vos plats de tous les jours
+          <br>Les olives de nos vergers cultivés en Provence, sont pressées dans un moulin moderne. Le processus nous permet de diversifier les cuvées en monovariété soit des cuvées d'assemblages.
+          <br>Nous mettons tout notre savoir faire pour vous présenter le meilleur de notre travail : une huile d'olive 100% naturelle et de saveurs différentes.
+          </p>
+          </div>
+          <div class="flex-row gy-2 align-items-end">
+            <div class="col sm-6">
+              <p class="product-info-price">À partir de 25,00 € le litre</p>
+            </div>
+            <div class="col">
+              <a href="details-produit2.html" class="product-button">Plus de détails</a>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </div>  
+  </section>
+
+
+
+
+
+
+  <section id="bienfaits" class="bienfaits">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Les bienfaits de l'huile d'olive<br></h2>
+      <p>Connaissez-vous toutes les utilisations et les avantages qu'apporte l'huile d'olive ?</p>
+    </div>
+    <!-- Fin du titre du conteneur -->
+    <div class="img-box-container container aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <img src="images/MontageReech.jpg" alt="Producteur d'huile d'olive" class="img-fluid m-auto" >
+    </div>
+    <div class="container">
+      <p>L'huile d'olive est utilisée depuis des millénaires pour ses nombreux bienfaits, tant en usage interne (absorption) qu'en usage externe (application sur la peau). Elle est réputée pour ses propriétés nutritives, curatives et esthétiques. Voici un aperçu des bienfaits associés à chaque usage.</p>
+      <div class="row gy-4" >
+          <div class="col-md-6 col-sm-8">
+            <div class="bienfaits-items position-relative">
+              <h3>Bienfaits de l'huile d'olive en usage interne (absorption)</h3>
+              <p>Richesse en antioxydants : L'huile d'olive est riche en polyphénols et en vitamine E, qui sont de puissants antioxydants. Ces composés aident à combattre les radicaux libres dans le corps, réduisant ainsi le risque de maladies chroniques comme le cancer et les maladies cardiaques.</p>
+              <a href="bienfaits-details.html" class="readmore stretched-link">Lire la suite <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bienfaits-items position-relative">
+              <h3>Bienfaits de l'huile d'olive en usage externe (application cutanée)</h3>
+              <p>Hydratation de la peau : L'huile d'olive est un excellent hydratant naturel. Elle pénètre facilement la peau et aide à restaurer la barrière lipidique, prévenant ainsi la perte d'humidité. Elle est particulièrement bénéfique pour les peaux sèches et les zones rugueuses.</p>
+              <a href="bienfaits-details.html" class="readmore stretched-link">Lire la suite <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+      </div>
+      <div class="container">
+        <br>
+        <p>L'huile d'olive, qu'elle soit consommée ou appliquée, est un produit naturel aux multiples vertus. Elle favorise une bonne santé globale lorsqu'elle est intégrée à une alimentation équilibrée, tout en étant un allié précieux pour la peau et les cheveux en usage cosmétique.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section id="fabrication" class="fabrication">
+        <!-- Début du titre du conteneur -->
+        <div class="container section-title" data-aos="fade-up" >
+          <h2>La Fabrication de l'huile d'olive<br></h2>
+          <p>Nous sélectionnons les meilleures olives et utilisons des méthodes traditionnelles pour presser et extraire l'huile.</p>
+        </div>
+        <!-- Fin du titre du conteneur -->
+        <div class="container">
+         
+              
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+       
+          <!-- Début du conteneur des différentes étapes de fabrication -->
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Début contenu etape 1 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item ">
+              <div class="portfolio-content h-100">
+                <a href="images/olives-gros plan-tom-pixa.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="images/olives-gros plan-tom-pixa.jpg" class="img-fluid rounded" alt="Image en gros plan d'olives en vrac"></a>
+                <div class="portfolio-info">
+                  <h3><a href="fabrication.html" title="Plus de détails">La Récolte</a></h3>
+                  <p>La récolte des olives se fait généralement entre septembre et janvier, en fonction du type d'olive et de l'exposition des oliviers</p>      
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Début contenu aetape 2-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <a href="images/olives-gros plan vrac-art-vision-So-pix-REC.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="images/olives-gros plan vrac-art-vision-So-pix-REC.jpg" class="img-fluid rounded" alt="gros plan d'olives en vrac"></a>
+                <div class="portfolio-info">
+                  <h3><a href="fabrication.html" title="Plus de détails">La Trituration</a></h3>
+                  <p>Les olives, y compris le noyau, sont broyées pour former une pâte. Cette étape permet de libérer l'huile contenue dans la chair des olives.</p>
+                </div>
+              </div>
+            </div>
+ 
+         
+             <!-- Début contenu etape 3-->
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
+              <div class="portfolio-content h-100">
+                <a href="images/olive-oil-bulles d'or-barbara jackson-pix-REC.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="images/olive-oil-bulles d'or-barbara jackson-pix-REC.jpg" class="img-fluid rounded" alt="gros de bulles d'huile d'olive de couleur or"></a>
+                <div class="portfolio-info">
+                  <h3><a href="fabrication.html" title="Plus de détails">L'Extraction</a></h3>
+                  <p>L'huile est ensuite extraite de la pâte. Il existe deux principales méthodes d'extraction : le pressage et la centrifugation.</p>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+            <a href="fabrication.html" class="readmore stretched-link">Pour plus de détails... et découvrir le moulin à huile, c'est par ici !</i></a>
+          </div></div>
+  </section>
+
+
+  <section id="faq" class="faq">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Foire aux questions</h2>
+      <p>Retrouvez les réponses aux questions les plus fréquentes</p>
+    </div>
+    <!-- Fin du titre du conteneur -->
+
+    <!-- debut du carousel -->
+    <div class="container">
+      <div id="carousel-faq"class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500"  >
+        <div class="carousel-inner" >
+          <div class="carousel-item active" >
+            <img src="images/A_close-up_view_of_a_pile_of_ripe_olives,_showcasi.converted.png" alt="Carrousel slide 1" class="d-block w-100">
+          </div>
+          <div class="carousel-item" >
+            <img src="images/abstract-huile-Silke-pixa.jpg" alt="Carrousel slide 2" class="d-block w-100">
+          </div>
+          <div class="carousel-item" >
+            <img src="images/olive-restanques-dimitris vetsikas.jpg" alt="Carrousel slide 3" class="d-block w-100">
+          </div>
+          <div class="carousel-item" >
+            <img src="images/olives-pluie-mali Aroesti-Pixabay.jpg" alt="Carrousel slide 4" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-faq" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-faq" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<!-- fin du carousel -->
+
+<!-- debut des questions -->
+      <h3>Les questions fréquentent concernant la vente de notre huile d'olive</h3>
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>Est-il possible de déguster l'huile d'olive du Pavillon avant d'en acheter ? </span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>Si vous nous rendez visite au Pavillon, nous nous ferons un plaisir de vous faire gouter nos différentes huiles. Libre à vous ensuite d'en acquérir une ou plusieurs bouteilles pour rapporter un brin de provence dans votre cuisine.</p>
+      </div>
+    </div>
+
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>L'huile d'olive en vente est-elle une huile locale ? </span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>L'huile d'olive by JFB vendue au pavillon est une huile issue de la récolte de JFB et de son choix d'assemblage. </p>
+      </div>
+    </div>
+
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>Faut-il prendre rendez-vous pour effectuer une dégustation d'huile d'olive ? </span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>S'il n'est pas indispensable de prendre rendez-vous pour déguster notre huile d'olive, il est fortement recommandé de téléphoner avant de nous rendre visite. En effet, nous sommes une exploitation agricole, et nous sommes souvent dans nos champs !</p>
+      </div>
+    </div>
+
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>Peut-on commander de l'huile d'olive n'importe où en France ? depuis l'étranger ?</span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>Nous expédions les colis partout en France par Colissimo ou en Boutique relais. <br>Pour l'étranger, nous expédions au cas par cas, aussi n'hésitez pas à nous contacter, nous tenterons de faire le nécessaire pour satisfaire votre demande. </p>
+      </div>
+    </div>
+
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>Il y a t-il un minimum de commande pour acheter en ligne ?</span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>Le minimum de commande pour les commandes effectués en ligne est de 1 litre. Les frais de port sont à la charge de l'acheteur. </p>
+      </div>
+    </div>  
+
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>Comment sont calculés les frais de port ?</span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>Les frais de port dépendent principalement du poid du colis et du transporteur choisi pour effectuer la livraison. Ils incluent l'emballage et le port.</p>
+      </div>
+    </div>  
+
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>Peut on acheter de l'huile sur place au Pavillon ?</span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>Lors de votre visite au Pavillon de JFB, vous pourrez déguster et acheter de l'huile d'olive sur place.</p>
+    </div>
+  </div>  
+
+
+
+  <h3>Des questions que vous pourriez vous poser sur la production de l' huile d'olive</h3>
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span> Que signifie la mention 1<sup>ère</sup> pression à froid ?</span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>La pâte d'olive est pressée à une température inférieure à 30 degré Celsus (procédé à froid), ce qui préserve davantage les arômes et les nutriments de l'huile.
+        <br>Il est ensuite possible d'effectuer une seconde pression à chaud.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>De l'huile Extra-vierge, qu'est ce que cela veut dire ?</span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>Le terme Extra-vierge se rapporte au taux de gustativité de l'huile, il désigne la plus haute qualité d'huile d'olive. 
+        <br> Il se réfère à un processus d'extraction et à des critères de qualité très stricts. 
+        <br>L'huile doit être obtenue uniquement par des procédés mécaniques, sans utilisation de produits chimique ou de raffinage, pour garantir le goût et les propriétés des olives. 
+        <br>Son taux d'acidité libre (exprimé en acide oléique) ne doit pas dépassé 0,8%, ce qui garantie que les olives étaient de bonne qualité et ont été pressée rapidement.
+        <br>L'huile doit présenter des qualités gustatives, telles que des arômes fruités, herbacés ou légèrement amers.
+        </p>
+      </div>
+    </div>
+   
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>Qu'est-ce qu'un Escourtin ?</span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>Un escourtin est un filtre de forme ronde en fibre servant à extraire l'huile d'olive.</p>
+      </div>
+    </div>
+
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>Combien de temps dure la presse des olives ???</span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>???</p>
+      </div>
+    </div>
+
+    <div class="faq-items">
+      <div class="question" onclick="toggleAnswer(this)">
+        <span>Quelle est la différence entre les Olives Vertes et les Olives Noires ?</span><i class="bi bi-chevron-down toggle-dropdown"></i>
+      </div>
+      <div class="answer">
+        <p>Il n'y a aucune différence entre des olives vertes et des olives noires, si ce n'est que les noires sont mures alors que les vertes ne le sont pas !</p>
+      </div>
+    </div>
+    </div>
+</section>
+
+<!-- fin des faq -->
+
+
+
+
+
+
+
+
+  <section id="contact" class="contact">
+    <div class="container section-title" data-aos="fade-up">
+      <h2><strong ><span font-size="larger"> Contact </span></strong> & Accès<br></h2>
+      <h3>N'hésitez pas à venir nous rencontrer au Pavillon pour déguster notre huile d'olive ou à nous envoyer votre message.</h3>
+      <p>Nous receptionnons chacune de vos demandes et tenterons d'y répondre.</p>
+    </div>
+    <!-- Fin du titre du conteneur -->
+   
+    <div class="container justify-content-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gx-lg-0 gy-4">
+          <div class="col-lg-4">
+      
+            <div class="info-container d-flex flex-column align-items-center justify-content-center">
+              <!-- Début du contenu de l'adresse de l'entreprise. -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://www.google.com/maps/@43.5340552,6.4072407,3a,90y,342.02h,80.42t/data=!3m10!1e1!3m8!1sT1eAujXADO7QE4FstwgzMw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D9.579093746073653%26panoid%3DT1eAujXADO7QE4FstwgzMw%26yaw%3D342.02295048483967!7i16384!8i8192!9m2!1b1!2i69?coh=205410&entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                </a>
+                <div>
+                  <h3>Adresse :</h3>
+                  <p>Le Pavillon <br>1251 route de Draguignan</p>
+                  <p>83 780 FLAYOSC</p>
+                </div>
+              </div>
+              <!-- Fin du contenu de l'adresse de l'entreprise. -->
+
+
+              <!-- Début du contenu du téléphone de l'entreprise. -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Téléphone :</h3>
+                  <p><a href="tel:0618724755">06 18 72 47 55</a></p>
+                </div>
+              </div>
+              <!-- Fin du contenu du téléphone de l'entreprise. -->
+
+
+              <!-- Début du contenu de l'adresse mail de l'entreprise. -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Adresse mail :</h3>
+                  <p>
+                    <a href="mailto:jfbordin@gmail.com">
+                      jfbordin@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <!-- Fin du contenu de l'adresse mail de l'entreprise. -->
+
+
+              <!-- Début du contenu des horaires d'ouverture de l'entreprise. -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-clock flex-shrink-0"></i>
+                <div>
+                  <h3>Horaires d'ouverture :</h3>
+                  <p>Lundi-Dimanche : 9H00 - 19H00
+                  </p>
+                </div>
+              </div>
+              <!-- Fin du contenu des horaires d'ouverture de l'entreprise. -->
+
+            </div>
+
+          </div>
+           <!-- Début du formulaire de contact. -->
+          <div class="col-lg-8">
+
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
+              <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control bg-transparent " placeholder="Entrez votre nom complet ici..." required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control bg-transparent" name="email" placeholder="Entrez votre adresse mail ici..." >
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="tel" name="phone" class="form-control bg-transparent " placeholder="Entrez votre numéro de téléphone si vous souhaitez être contacté par téléphone..." required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" class="form-control bg-transparent " name="subject" placeholder="Entrez le sujet de votre message ici..." required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea class="form-control bg-transparent " name="message" rows="8" placeholder="Rédigez votre message ici..." required=""></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="checkbox" name="privacy" id="privacy" value="1"> En soumettant ce formulaire, j'autorise JFB à collecter mes données personnelles afin de pouvoir me contacter et traiter ma demande. Cependant, vos données personnelles ne seront jamais vendues ou communiquer à des tiers.
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Chargement</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Votre message a bien été envoyé. Merci !</div>
+                    <button type="submit">Envoyez votre message</button>
+                  </div>
+
+              </div>
+            </form>
+
+          </div>
+          <!-- Fin du formulaire de contact. -->
+         
+      </div>
+   
+    </div> 
+    <div class="carte row-cols-1 justify-content-center">
+      <h2>Venez nous rencontrer :</h2>
+        <p>Nous vous recevons sans rendez-vous pour une dégustation d'huile d'olive provençale authentique.
+        <br>Toutefois, nous vous conseillons de nous appeler avant votre visite pour vous assurer de notre présence au Pavillon, nous sommes souvent dans les champs !
+
+        </p>
+      <div class=" carte container justify-content-center">  
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1727096508653!6m8!1m7!1sT1eAujXADO7QE4FstwgzMw!2m2!1d43.53405516128394!2d6.407240653986999!3f342.37088!4f0!5f0.7820865974627469" width="100%" height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrad "></iframe>
+        </iframe>
+      </div>
+    </div>
+  </section>
+  
+
+</main>
+
+
+
+
+  
+
+  <footer>
+
+
+
+    <div class="container position-relative d-flex align-items-center justify-content-center">
+      <nav class="navmenu-foot">
+        <ul>
+          <li><a href="#about" aria-label="Lien vers la page à propos"> À propos</a></li>
+          <li><a href="#shop" arial-label="Lien vers la boutique en ligne">Boutique</a></li>
+          <li><a href="#fabrication" aria-label="lien vers le processus de fabrication">Fabrication</a></li>
+          <li><div class="logoFOOT"><a href="index.html" aria-label="Logo du site"><img src="images/Logoisole.svg" alt="LOGO"></a></div></li>
+          <li><a href="partenaires.html" aria-label="Lien vers les partenaires">Nos partenaires</a></li>
+          <li><a href="#faq" aria-label="Lien vers les FAQ">FAQ</a></li>
+          <li><a href="#contact" aria-label="lien vers la page de contact">Contact</a> </li>
+        </ul>
+        <div  class="logoFOOT2 container position-relative d-flex align-items-center justify-content-center"><a href="index.html" aria-label="Logo du site" class="logoFOOT"><img src="images/Logoisole.svg" alt="LOGO"></a></div>
+      </nav>
+    </div>
+
+   <!--<div class="circle-container">
+    <div class="demi-ligne"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="demi-ligne"></div>
+  </div>!-->
+ 
+  <div class="container position-relative d-flex align-items-center ">
+    <div class="demi-ligne"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="demi-ligne"></div>
+  </div>
+
+
+  <div class="container position-relative d-flex align-items-center justify-content-center">
+
+    <nav>
+      <ul  class="navbar">
+        <li>© JF Bordin - 2024 - tous droits réservés</li>
+        <li><a href="Mentions-legales.html" aria-label="Lien vers les mentions légales">  Mentions légales  </a></li>
+        <li><a href="politique-de-confidentialite.html" aria-label="Lien vers la politique de confidentialite">Politique de confidentialite</a></li>
+        <li><a href="CGV.html" aria-label="Lien vers les CGV">CGV</a></li>
+      </ul>
+
+    </nav>
+  </footer>  
+
+   <!-- Bouton retour haut de page. -->
+   <a href="#" aria-label="Bouton haut de page" title="Remonter" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+   <script src="aos/aos.js"></script>
+   <script src="purecounter/purecounter_vanilla.js"></script>
+  <script src="JS/script.js"></script>
+  <!--Bootstrap lien vers scripte, si pblre, retirer le popper-->
+  <!--version justin <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <!-- lien vers les Js compiles et mimifies groupeés incluent popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="isotope-layout/isotope.pkgd.min.js"></script>
+  <!-- lien GPT <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>-->
+  <script src="glightbox/js/glightbox.min.js"></script>
+  </body>
+</html>
+
+
