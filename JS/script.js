@@ -10,45 +10,28 @@ function scrollToSection(sectionId) {
 
 //compte à rebours
 const yearDisplay = document.getElementById('yearDisplay');
+let countdownStarted = false;
+
 
 if (yearDisplay) {
 let currentYear = new Date().getFullYear(); // Année actuelle
 const endYear = 1921; // Année finale
-let countdownStarted = false;
-    
+
 // Fonction pour décrémenter l'année
 function countdown() {
-  yearDisplay.textContent = currentYear; // Afficher l'année actuelle
-  if (currentYear > endYear) {
-    currentYear--; // Décrémente l'année
-  } else {
-    clearInterval(interval); // Arrêter le compte à rebours
-  }
+
+yearDisplay.textContent = currentYear; // Afficher l'année actuelle
+
+if (currentYear > endYear) {
+  currentYear--; // Décrémente l'année
+} else {
+  clearInterval(interval); // Arrêter le compte à rebours
+}
 } 
-
-
-function startCountdown() {
-  if (!countdownStarted) {
-    countdownStarted = true;
 // Mettre à jour l'affichage toutes les 1 seconde
 let interval = setInterval(countdown, 50);
 }
-}
-// Créer un observateur pour la section "À propos"
-const aboutSection = document.getElementById('about'); // Change 'about' par l'ID réel de ta section
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      startCountdown(); // Lancer le décompte quand la section est visible
-    }
-  });
-}, { threshold: 0.5 }); // Commencer quand au moins 50% de la section est visible
 
-// Observer la section "À propos"
-if (aboutSection) {
-  observer.observe(aboutSection);
-}
-}
 
 
 
