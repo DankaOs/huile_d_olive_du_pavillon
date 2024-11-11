@@ -1,0 +1,2609 @@
+F8EBE0/* Color Theme Swatches in Hex */
+.color-theme_olives-1955275_1920-patrick-gantz-pixabay-1-hex { color: #21170b; }
+.color-theme_olives-1955275_1920-patrick-gantz-pixabay-2-hex { color: #C4C61C; }
+.color-theme_olives-1955275_1920-patrick-gantz-pixabay-3-hex { color: #fde09c; }
+.color-theme_olives-1955275_1920-patrick-gantz-pixabay-4-hex { color: #f8ebe0; }
+.color-theme_olives-1955275_1920-patrick-gantz-pixabay-5-hex { color: #feffdd; }
+
+
+/* Polices d'écriture utilisées pour le site. */
+:root {
+    --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Poppins",  sans-serif;
+    --nav-font: "Poppins",  sans-serif;
+  }
+  /* Polices d'écriture utilisées pour le site. */
+
+/* Couleurs globales - Les variables de couleur suivantes sont utilisées sur tout le site web. 
+Les mettre à jour ici changera le schéma de couleurs de tout le site */
+:root { 
+    --background-color: #f8ebe0; /* Couleur de fond pour tout le site, y compris les sections individuelles */
+    --default-color: #21170b; /* Couleur par défaut utilisée pour la majorité du contenu textuel sur tout le site */
+    --heading-color: #21170b; /* Couleur pour les titres, sous-titres et titres sur tout le site */
+    --accent-color: #C4C61C; /* Couleur d'accent qui représente votre marque sur le site. 
+                              Elle est utilisée pour les boutons, les liens et autres éléments qui doivent se démarquer */
+    --surface-color: #fde09c; /* La couleur de surface est utilisée comme fond pour les éléments 
+                                encadrés dans les sections, tels que les cartes, les boîtes d'icônes 
+                                ou d'autres éléments nécessitant une séparation visuelle du fond global. */
+    --contrast-color: #feffdd; /* Couleur de contraste pour le texte, assurant la lisibilité 
+                                 contre les fonds de couleur d'accent, de titre ou par défaut. */                      
+  }
+
+/* Couleurs du menu de navigation - Les variables de couleur suivantes sont utilisées spécifiquement 
+pour le menu de navigation. 
+Elles sont séparées des couleurs globales pour permettre plus d'options de personnalisation */
+:root {
+    --nav-color:#f8ebe0;  /* Couleur par défaut des liens du menu de navigation principal */
+    --nav-hover-color: #f8ebe0; /* Appliqué aux liens du menu de navigation principal lorsqu'ils sont survolés ou actifs */
+    --nav-mobile-background-color: #C4C61C; /* Utilisé comme couleur de fond pour le menu de navigation mobile */
+    --nav-dropdown-background-color: #21170b; /* Utilisé comme couleur de fond pour les éléments déroulants 
+                                                qui apparaissent lors du survol des éléments de navigation principaux */
+    --nav-dropdown-color: #f8ebe0; /* Utilisé pour les liens de navigation des éléments déroulants 
+                                     dans le menu de navigation. */
+    --nav-dropdown-hover-color: #C4C61C; /* Similaire à --nav-hover-color, cette couleur est appliquée 
+                                           aux liens de navigation déroulants lorsqu'ils sont survolés. */
+  }
+
+  :root {
+    --bs-primary: #C4C61C!important;
+    --bg-primary:var(--bs-primary)
+  }
+  
+  /* Défilement fluide */
+  :root {
+    scroll-behavior: smooth;
+  }
+  /* Défilement fluide */
+
+
+
+
+/*--------------------------------------------------------------
+# Style général et classes partagées
+--------------------------------------------------------------*/
+
+
+/* Styles globaux pour le corps de la page en mode normal */
+.body {
+    /* Couleur par défaut du texte */
+    color: var(--default-color);
+    /* Couleur de fond de la page */
+    background-color: var(--background-color);
+    /* Police de caractères par défaut */
+    font-family: var(--default-font);
+    margin: 0;
+    padding: 0;
+
+  }
+
+.main {
+  background-color:var(--background-color)
+}
+
+p {
+    line-height: 2;
+    padding: 20px;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: justify;
+    font-weight: 100;
+}
+
+/* Styles globaux pour les liens */
+a {
+    /* Couleur par défaut des liens */
+    color: var(--accent-color);
+    /* Suppression de la décoration par défaut des liens */
+    text-decoration: none;
+    /* Transition douce pour les interactions avec les liens */
+    transition: 0.9s;
+
+  }
+  /* Styles globaux pour les liens */
+
+
+  /* Styles pour les liens lors du survol */
+a:hover {
+    /* Modification de la couleur du lien lors du survol */
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    /* Suppression de la décoration lors du survol */
+    text-decoration: none;
+  }
+  /* Styles pour les liens lors du survol */
+
+
+/* Styles globaux pour les titres (h1 à h3) */
+h1,
+h2,
+h3{
+  /* Couleur par défaut des titres */
+  color: var(--heading-color);
+  /* Police spécifique pour les titres */
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+}
+
+/* Styles globaux pour les titres (h4 à h6) */
+h4,
+h5,
+h6 {
+  /* Couleur par défaut des titres */
+  color: var(--heading-color);
+  /* Police spécifique pour les titres */
+  font-family: var(--heading-font);
+}
+
+
+/*--------------------------------------------------------------
+# En-tête, styles pour toutes les pages
+--------------------------------------------------------------*/
+/* Styles pour l'en-tête global du site */
+.header {
+    /* Couleur de fond pour l'en-tête */
+    --background-color: #21170b;
+    /* Couleur des titres dans l'en-tête */
+    --heading-color: #fde09c;
+   /* HAuteur de la barre*/
+    height: 70px;
+    /* Couleur par défaut du texte dans l'en-tête */
+    color: var(--heading-color);
+    /* Transition douce pour tous les changements de style */
+    transition: all 0.5s;
+    /* Z-index élevé pour s'assurer que l'en-tête reste au-dessus des autres éléments */
+    z-index: 997;
+    /* Application de la couleur de fond définie */
+    background-color: var(--background-color);
+    align-items: center;
+  }
+
+  /* Ajustements des styles pour les écrans de petite taille */
+@media (max-width: 575px) {
+  /* Réduction de la taille de la police pour les contacts dans la barre supérieure sur les petits écrans */
+  .header  i a {
+    font-size: 13px;
+  }
+}
+
+
+
+
+/* Styles pour les liens de contact dans la barre supérieure de l'en-tête */
+.header  i a {
+    /* Hauteur de ligne nulle pour rapprocher le texte et les icônes */
+    line-height: 0;
+    /* Transition douce de 0,3 seconde pour les changements de style */
+    transition: 0.3s;
+  }
+
+
+/* Styles pour la section de branding de l'en-tête */
+.header .branding {
+    /* Hauteur minimale pour le branding */
+    min-height: 40px;
+    /* Espacement intérieur vertical */
+    padding: 5px 0;
+  }
+  
+  header nav a {
+    color: #fde09c;
+    text-decoration-line: none;
+}
+
+.header .logo{
+  line-height: 1;
+}
+  /* Styles pour l'image du logo */
+  .header .logo img {
+    /* Hauteur maximale de l'image du logo */
+    max-height: 50px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .header .logo img:hover {
+    transform: scale(1.2);
+  }
+
+
+  /* Styles pour l'en-tête lorsqu'il est en mode "scrolled" */
+  .scrolled .header {
+    /* Ajout d'une ombre portée sous l'en-tête lorsqu'on fait défiler la page */
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+  /*--------------------------------------------------------------
+  # En-tête, styles pour toutes les pages
+  --------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------
+# Menu de navigation
+--------------------------------------------------------------*/
+/* Navigation de bureau */
+/* Styles pour les écrans larges, à partir de 900px de largeur */
+@media (min-width: 1024px) {
+    /* Styles pour le menu de navigation */
+    .navmenu {
+      /* Suppression des marges intérieures */
+      padding: 0;
+    }
+  
+    /* Styles pour les listes dans le menu de navigation */
+    .navmenu ul {
+      /* Suppression des marges extérieures */
+      margin: 0;
+      /* Suppression des marges intérieures */
+      padding: 0;
+      /* Affichage en flexbox pour aligner les éléments horizontalement */
+      display: flex;
+      /* Suppression des puces de liste */
+      list-style: none;
+      /* Alignement vertical des éléments de la liste */
+      align-items: center;
+    }
+  
+    /* Styles pour les éléments de liste dans le menu de navigation */
+    .navmenu li {
+      /* Positionnement relatif pour permettre un positionnement absolu des sous-éléments */
+      position: relative;
+      
+    }
+  
+    /* Styles pour les éléments de premier niveau dans le menu de navigation */
+    .navmenu>ul>li {
+      /* Empêche le texte de se diviser en plusieurs lignes */
+      white-space: nowrap;
+      /* Espacement intérieur pour chaque élément du menu */
+      padding: 10px 10px;
+    }
+  
+    /* Suppression de la marge droite pour le dernier élément du menu */
+    .navmenu>ul>li:last-child {
+      /* Pas d'espacement à droite pour le dernier élément */
+      padding-right: 0;
+    }
+  
+    /* Styles pour les liens dans le menu de navigation */
+    .navmenu a,
+    .navmenu a:focus {
+      /* Couleur du texte des liens de navigation */
+      color: var(--nav-color);
+      /* Taille de la police des liens */
+      font-size: 18px;
+      /* Espacement intérieur horizontal pour les liens */
+      padding: 0 2px;
+      /* Police utilisée pour les liens de navigation */
+      font-family: var(--nav-font);
+      /* Poids de la police pour rendre le texte en semi-gras */
+      font-weight: 100;
+      /* Affichage en flexbox pour aligner les éléments horizontalement */
+      display: flex;
+      /* Alignement vertical des éléments */
+      align-items: center;
+      /* Justification de l'espace entre les éléments enfants */
+      justify-content: space-between;
+      /* Empêche le texte de se diviser en plusieurs lignes */
+      white-space: nowrap;
+      /* Transition douce pour les changements de style */
+      transition: 0.3s;
+      /* Positionnement relatif pour permettre des ajustements supplémentaires */
+      position: relative;
+    }
+  
+    /* Styles pour les icônes dans les liens de navigation */
+    .navmenu a i,
+    .navmenu a:focus i {
+      /* Taille de la police des icônes */
+      font-size: 12px;
+      /* Hauteur de ligne nulle pour aligner les icônes avec le texte */
+      line-height: 0;
+      /* Marge à gauche pour espacer l'icône du texte */
+      margin-left: 5px;
+      /* Transition douce pour les changements de style des icônes */
+      transition: 0.3s;
+    }
+
+    .mobile-nav-toggle {
+      visibility: hidden;
+    }  
+
+  }
+  /*_________________________________________________________________________________
+
+
+
+
+
+   /* Styles pour l'effet sous les liens de navigation */
+  .navmenu>ul>li>a:before {
+    /* Aucun contenu texte, juste un élément de style */
+    content: "";
+    /* Positionnement absolu par rapport au lien */
+    position: absolute;
+    /* Hauteur de la ligne sous le lien */
+    height: 2px;
+    /* Positionnement en bas du lien avec un léger décalage */
+    bottom: -6px;
+    /* Alignement à gauche du lien */
+    left: 0;
+    /* Couleur de fond de la ligne, généralement la couleur de survol */
+    background-color: var(--nav-hover-color);
+    /* Ligne cachée par défaut */
+    visibility: hidden;
+    /* Largeur initiale de la ligne (nulle) */
+    width: 0px;
+    /* Transition douce pour la largeur et la visibilité */
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  /* Styles pour l'affichage de la ligne sous le lien lors du survol ou pour l'élément actif */
+  .navmenu a:hover:before,
+  .navmenu li:hover>a:before,
+  .navmenu .active:before {
+    /* Rendre la ligne visible */
+    visibility: visible;
+    /* Étendre la ligne sur toute la largeur du lien */
+    width: 100%;
+  }
+  
+  /* Styles pour les liens de navigation lors du survol ou pour l'élément actif */
+  .navmenu li:hover>a,
+  .navmenu .active,
+  .navmenu .active:focus {
+    /* Couleur du texte des liens lorsqu'ils sont survolés ou actifs */
+    color: var(--nav-color);
+  }
+  
+  /* Styles pour les sous-menus déroulants dans la navigation */
+  .navmenu .dropdown ul {
+    /* Suppression des marges extérieures */
+    margin: 0;
+    /* Espacement intérieur pour les éléments du sous-menu */
+    padding: 10px 0;
+    /* Couleur de fond pour le sous-menu déroulant */
+    background: var(--nav-dropdown-background-color);
+    /* Affichage en bloc des sous-éléments */
+    display: block;
+    /* Positionnement absolu par rapport à l'élément parent */
+    position: absolute;
+    /* Sous-menu caché par défaut */
+    visibility: hidden;
+    /* Positionnement à gauche avec un léger décalage */
+    left: 14px;
+    /* Positionnement en dessous de l'élément parent avec un léger décalage */
+    top: 130%;
+    /* Opacité initiale du sous-menu (invisible) */
+    opacity: 0;
+    /* Transition douce pour la visibilité et l'opacité */
+    transition: 0.3s;
+    /* Bordures arrondies pour les coins du sous-menu */
+    border-radius: 4px;
+    /* Z-index élevé pour s'assurer que le sous-menu reste au-dessus des autres éléments */
+    z-index: 99;
+    /* Ajout d'une ombre portée sous le sous-menu */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles pour les éléments de liste dans les sous-menus déroulants */
+  .navmenu .dropdown ul li {
+    /* Largeur minimale pour chaque élément du sous-menu */
+    min-width: 200px;
+  }
+  
+  
+  /* Styles pour les liens dans les sous-menus déroulants */
+  .navmenu .dropdown ul a {
+    /* Espacement intérieur pour les liens du sous-menu */
+    padding: 10px 20px;
+    /* Taille de la police des liens du sous-menu */
+    font-size: 15px;
+    /* Aucun changement de casse pour le texte des liens */
+    text-transform: none;
+    /* Couleur du texte des liens dans le sous-menu */
+    color: var(--nav-dropdown-color);
+  }
+
+  /* Styles pour les icônes dans les liens des sous-menus déroulants */
+  .navmenu .dropdown ul a i {
+    /* Taille de la police des icônes dans le sous-menu */
+    font-size: 12px;
+  }
+  
+  /* Styles pour les liens des sous-menus lors du survol ou lorsque l'élément est actif */
+  .navmenu .dropdown ul a:hover,
+  .navmenu .dropdown ul .active:hover,
+  .navmenu .dropdown ul li:hover>a {
+    /* Changement de couleur lors du survol pour indiquer l'interactivité */
+    color: var(--nav-dropdown-hover-color);
+  }
+  
+  /* Styles pour afficher le sous-menu lorsqu'il est survolé */
+  .navmenu .dropdown:hover>ul {
+    /* Rendre le sous-menu visible en augmentant l'opacité */
+    opacity: 1;
+    /* Ajustement de la position du sous-menu vers le haut */
+    top: 100%;
+    /* Rendre le sous-menu visible */
+    visibility: visible;
+  }
+  
+  /* Styles pour les sous-menus déroulants imbriqués */
+  .navmenu .dropdown .dropdown ul {
+    /* Positionnement initial du sous-menu imbriqué */
+    top: 0;
+    /* Positionnement à gauche avec un décalage pour le sous-menu imbriqué */
+    left: -90%;
+    /* Sous-menu imbriqué caché par défaut */
+    visibility: hidden;
+  }
+  
+  /* Styles pour afficher le sous-menu imbriqué lorsqu'il est survolé */
+  .navmenu .dropdown .dropdown:hover>ul {
+    /* Rendre le sous-menu imbriqué visible en augmentant l'opacité */
+    opacity: 1;
+    /* Ajustement de la position verticale du sous-menu imbriqué */
+    top: 0;
+    /* Positionnement à gauche avec un décalage pour le sous-menu imbriqué */
+    left: -100%;
+    /* Rendre le sous-menu imbriqué visible */
+    visibility: visible;
+  }
+  
+
+
+  
+  /* Navigation mobile _______________________________________________________________________*/
+
+  /* Styles pour les écrans plus petits, jusqu'à 1023px de largeur */
+  @media (max-width: 1023px) {
+    /* Styles pour l'icône de bascule du menu mobile */
+  .mobile-nav-toggle {
+    /* Couleur de l'icône de bascule, généralement la couleur des liens de navigation */
+    color: var(--contrast-color);
+    /* Taille de la police pour l'icône de bascule */
+    font-size: 28px;
+    /* Hauteur de ligne nulle pour aligner l'icône avec d'autres éléments */
+    line-height: 0;
+    /* Marge à droite pour espacer l'icône des autres éléments */
+    margin-right: 10px;
+    /* Changement du curseur pour indiquer que l'icône est cliquable */
+    cursor: pointer;
+    /* Transition douce pour les changements de couleur lors des interactions */
+    transition: color 0.3s;
+  }
+  
+  
+   /* Styles pour le menu de navigation */
+  .navmenu {
+    /* Suppression des marges intérieures pour le menu de navigation */
+    padding: 0;
+    /* Z-index élevé pour s'assurer que le menu de navigation reste au-dessus des autres éléments */
+    z-index: 9997;
+  }
+  
+  
+   /* Styles pour les listes de navigation dans le menu */
+  .navmenu ul {
+    /* Masquer le menu par défaut (utilisé pour les menus mobiles) */
+    display: none;
+    /* Suppression des puces de liste */
+    list-style: none;
+    /* Positionnement absolu pour permettre de superposer le menu */
+    position: absolute;
+    /* Positionnement du menu avec des marges internes par rapport aux bords de l'écran */
+    inset: 60px 20px 20px 20px;
+    /* Espacement intérieur pour les éléments du menu */
+    padding: 10px 0;
+    /* Suppression des marges extérieures */
+    margin: 0;
+    /* Bordures arrondies pour les coins du menu */
+    border-radius: 6px;
+    /* Couleur de fond pour le menu mobile */
+    background-color: var(--nav-dropdown-background-color);
+    /* Bordure subtile autour du menu avec un effet de transparence */
+    border: 1px solid color-mix(in srgb, var(--nav-dropdown-color), transparent 90%);
+    /* Suppression de l'ombre portée (par défaut) */
+    box-shadow: none;
+    /* Activation du défilement vertical si le contenu dépasse la hauteur de l'écran */
+    overflow-y: auto;
+    /* Transition douce pour les changements de style */
+    transition: 0.3s;
+    /* Z-index élevé pour s'assurer que le menu reste au-dessus des autres éléments */
+    z-index: 9998;
+  }
+  
+  /* Styles pour les liens dans le menu de navigation */
+  .navmenu a,
+  .navmenu a:focus {
+    /* Couleur du texte des liens dans le menu de navigation */
+    color: var(--nav-dropdown-color);
+    /* Espacement intérieur pour les liens */
+    padding: 10px 20px;
+    /* Police utilisée pour les liens du menu de navigation */
+    font-family: var(--nav-font);
+    /* Taille de la police des liens */
+    font-size: 17px;
+    /* Poids de la police pour rendre le texte en semi-gras */
+    font-weight: 200;
+    /* Affichage en flexbox pour aligner les éléments horizontalement */
+    display: flex;
+    /* Alignement vertical des éléments au centre */
+    align-items: center;
+    /* Justification de l'espace entre les éléments enfants */
+    justify-content: space-between;
+    /* Empêche le texte de se diviser en plusieurs lignes */
+    white-space: nowrap;
+    /* Transition douce pour les changements de style */
+    transition: 0.3s;
+  }
+  
+  
+    /* Styles pour les icônes dans les liens de navigation et lors du focus */
+  .navmenu a i,
+  .navmenu a:focus i {
+    /* Taille de la police pour les icônes */
+    font-size: 12px;
+    /* Hauteur de ligne nulle pour aligner l'icône avec le texte */
+    line-height: 0;
+    /* Marge à gauche pour espacer l'icône du texte */
+    margin-left: 5px;
+    /* Largeur fixe pour l'icône, pour garantir une forme circulaire */
+    width: 30px;
+    /* Hauteur fixe pour l'icône, pour garantir une forme circulaire */
+    height: 30px;
+    /* Affichage en flexbox pour aligner l'icône au centre */
+    display: flex;
+    /* Alignement vertical de l'icône au centre */
+    align-items: center;
+    /* Alignement horizontal de l'icône au centre */
+    justify-content: center;
+    /* Bordures arrondies pour créer une icône circulaire */
+    border-radius: 50%;
+    /* Transition douce pour les changements de style, comme la couleur de fond */
+    transition: 0.3s;
+    /* Couleur de fond de l'icône avec une transparence de 90% */
+    background-color: color-mix(in srgb, var(--background-color), transparent 90%);
+  }
+  
+  
+    /* Styles pour les icônes dans les liens de navigation lors du survol et du focus */
+  .navmenu a i:hover,
+  .navmenu a:focus i:hover {
+    /* Changement de couleur de fond pour l'icône lors du survol ou du focus */
+    background-color: var(--accent-color);
+    /* Changement de couleur du texte de l'icône pour contraster avec le fond */
+    color: var(--contrast-color);
+  }
+  
+  /* Styles pour les liens de navigation lors du survol ou lorsque l'élément est actif */
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    /* Changement de couleur du texte des liens lorsqu'ils sont survolés ou actifs */
+    color: var(--nav-mobile-background-color);
+  }
+  
+  /* Styles pour les icônes dans les liens actifs ou lorsque l'élément est en focus */
+  .navmenu .active i,
+  .navmenu .active:focus i {
+    /* Changement de couleur de fond pour l'icône dans les liens actifs */
+    background-color: var(--accent-color);
+    /* Changement de couleur du texte de l'icône pour contraster avec le fond */
+    color: var(--contrast-color);
+    /* Rotation de l'icône à 180 degrés pour un effet visuel distinct */
+    transform: rotate(180deg);
+  }
+  
+  /* Styles pour les sous-menus déroulants dans la navigation */
+  .navmenu .dropdown ul {
+    /* Positionnement statique par rapport à l'élément parent */
+    position: static;
+    /* Le sous-menu est masqué par défaut */
+    display: none;
+    /* Z-index pour s'assurer que le sous-menu reste au-dessus des autres éléments */
+    z-index: 99;
+    /* Espacement intérieur pour les éléments du sous-menu */
+    padding: 10px 0;
+    /* Marges autour du sous-menu */
+    margin: 10px 20px;
+    /* Couleur de fond pour le sous-menu déroulant */
+    background-color: var(--nav-dropdown-background-color);
+    /* Transition douce pour l'affichage du sous-menu */
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* Styles pour les sous-sous-menus déroulants */
+  .navmenu .dropdown ul ul {
+    /* Couleur de fond légèrement transparente pour les sous-sous-menus */
+    background-color: rgba(33, 37, 41, 0.1);
+  }
+  
+    /* Styles pour le sous-menu actif dans un menu déroulant */
+  .navmenu .dropdown>.dropdown-active {
+    /* Afficher le sous-menu lorsqu'il est actif */
+    display: block;
+    /* Couleur de fond légèrement transparente pour l'élément actif */
+    background-color: rgba(33, 37, 41, 0.03);
+  }
+  
+  /* Styles pour l'état actif du menu mobile */
+  .mobile-nav-active {
+    /* Désactivation du défilement du contenu en arrière-plan */
+    overflow: hidden;
+  }
+  
+  /* Styles pour l'icône de bascule du menu mobile lorsque le menu est actif */
+  .mobile-nav-active .mobile-nav-toggle {
+    /* Couleur blanche pour l'icône de bascule du menu mobile */
+    color: #f8ebe0;
+    /* Positionnement absolu pour l'icône de bascule */
+    position: absolute;
+    /* Taille de la police pour l'icône de bascule lorsqu'elle est active */
+    font-size: 32px;
+    /* Positionnement de l'icône en haut à 15 pixels du bord supérieur */
+    top: 15px;
+    /* Positionnement de l'icône à droite avec 15 pixels du bord droit */
+    right: 15px;
+    /* Suppression de la marge droite */
+    margin-right: 0;
+    /* Z-index élevé pour s'assurer que l'icône reste au-dessus des autres éléments */
+    z-index: 9999;
+  }
+  
+  /* Styles pour le menu de navigation lorsqu'il est en mode mobile actif */
+  .mobile-nav-active .navmenu {
+    /* Positionnement fixe pour que le menu reste visible lors du défilement */
+    position: fixed;
+    /* Désactivation du défilement du contenu dans le menu mobile */
+    overflow: hidden;
+    /* Positionnement du menu pour occuper toute la fenêtre */
+    inset: 0;
+    /* Couleur de fond sombre et légèrement transparente pour le menu mobile */
+    background: var(--default-color);
+    /* Transition douce pour l'apparition du menu mobile */
+    transition: 0.3s;
+  }
+  
+  
+    /* Styles pour afficher le menu de navigation mobile lorsqu'il est actif */
+  .mobile-nav-active .navmenu>ul {
+    /* Afficher le menu de navigation (liste) lorsque le mode mobile est actif */
+    display: block;
+  }
+  
+ 
+  }
+  /*--------------------------------------------------------------
+  # Menu de navigation top
+  --------------------------------------------------------------*/
+
+
+
+
+  
+
+
+
+
+
+/* bouton navigation / decouvrir--------------------------------------------------------------------------*/
+
+
+.button-nav {
+    width: 30px;
+    height: 30px;
+    background-color:var(--contrast-color);
+    border-radius: 50px;
+    color:  #21170b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin-right: 10%;
+    transition:  0.3s;
+}
+.button-nav:hover {
+  background-color: #21170b;
+  color: var(--contrast-color);
+}
+@media (max-width: 1023px) {
+  .navmenu li>.button-nav {
+margin: 20px;
+  }
+}
+
+
+.cta-button {
+  background-color: #C4C61C;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.cta-button:hover {
+  background-color: var(--surface-color);
+  color: var;
+  transform: scale(1.1)
+}
+
+
+
+/* bouton langue / decouvrir--------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Bouton de retour en haut de la page
+--------------------------------------------------------------*/
+/* Styles pour le bouton de retour en haut de la page */
+.scroll-top {
+  /* Positionnement fixe pour rester visible lors du défilement de la page */
+  position: fixed;
+  /* Le bouton est caché par défaut */
+  visibility: hidden;
+  /* Transparence totale par défaut pour le bouton */
+  opacity: 0;
+  /* Positionnement à 15 pixels du bord droit de la fenêtre */
+  right: 15px;
+  /* Positionnement en dehors de la fenêtre, en bas */
+  bottom: -15px;
+  /* Z-index élevé pour s'assurer que le bouton reste au-dessus des autres éléments */
+  z-index: 99999;
+  /* Couleur de fond pour le bouton */
+  background-color: var(--heading-color);
+  /* Largeur fixe pour le bouton */
+  width: 44px;
+  /* Hauteur fixe pour le bouton */
+  height: 44px;
+  /* Bordures arrondies pour créer un bouton circulaire */
+  border-radius: 50px;
+  /* Transition douce pour les changements de style, comme l'apparition ou les changements de couleur */
+  transition: all 0.4s;
+}
+
+/* Styles pour l'icône à l'intérieur du bouton de retour en haut */
+.scroll-top i {
+  /* Taille de la police pour l'icône */
+  font-size: 24px;
+  /* Couleur de l'icône pour contraster avec le fond du bouton */
+  color: var(--contrast-color);
+  /* Hauteur de ligne nulle pour aligner l'icône correctement */
+  line-height: 0;
+}
+
+/* Styles pour le bouton de retour en haut lors du survol */
+.scroll-top:hover {
+  /* Couleur de fond légèrement transparente lors du survol */
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  /* Couleur du texte/élément à l'intérieur du bouton pour maintenir le contraste */
+  color: var(--contrast-color);
+}
+
+
+/* Styles pour le bouton de retour en haut lorsqu'il est actif */
+.scroll-top.active {
+  /* Le bouton devient visible */
+  visibility: visible;
+  /* Opacité totale pour rendre le bouton complètement opaque */
+  opacity: 1;
+  /* Positionnement à 15 pixels du bord inférieur de la fenêtre pour le rendre visible */
+  bottom: 15px;
+}
+/*--------------------------------------------------------------
+# Bouton de retour en haut de la page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Désactiver le délai d'animation aos sur les appareils mobiles
+--------------------------------------------------------------*/
+/* Styles appliqués aux éléments avec un délai d'animation AOS sur les écrans de moins de 768px de large */
+@media screen and (max-width: 768px) {
+  /* Sélection des éléments ayant un attribut "data-aos-delay" */
+  [data-aos-delay] {
+    /* Suppression du délai de transition pour les animations sur les petits écrans */
+    transition-delay: 0 !important;
+  }
+}
+/*--------------------------------------------------------------
+# Désactiver le délai d'animation aos sur les appareils mobiles
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Sections globales
+--------------------------------------------------------------*/
+/* Styles pour les sections générales de la page */
+section,
+.section {
+  /* Couleur du texte par défaut dans les sections */
+  color: var(--default-color);
+  /* Couleur de fond pour les sections */
+  background-color: var(--background-color);
+  /* Espacement intérieur supérieur et inférieur pour les sections */
+  padding: 60px 0;
+  /* Marge en haut de la section lors du défilement pour éviter que le contenu soit masqué sous un en-tête fixe */
+  scroll-margin-top: 112px;
+  /* Clip overflow pour s'assurer que le contenu déborde de manière contrôlée */
+  overflow: clip;
+}
+
+/* Styles pour les sections générales sur les écrans de moins de 1199px de large */
+@media (max-width: 1199px) {
+  section,
+  .section {
+    /* Réduction de la marge en haut lors du défilement sur les petits écrans */
+    scroll-margin-top: 100px;
+  }
+}
+/*--------------------------------------------------------------
+# Sections globales
+--------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------
+# Titres de section globales
+--------------------------------------------------------------*/
+/* Styles pour le titre des sections */
+.section-title {
+  /* Alignement centré du texte pour le titre des sections */
+  text-align: center;
+  /* Espacement intérieur en bas pour créer un espace sous le titre */
+  padding-bottom: 60px;
+  /* Positionnement relatif pour permettre le positionnement d'éléments enfants */
+  position: relative;
+}
+
+/* Styles pour les titres de niveau 2 dans le titre des sections */
+.section-title h2 {
+  /* Taille de la police pour les titres de niveau 2 */
+  font-size: 62px;
+  /* Poids de la police pour rendre le titre en gras */
+  font-weight: 500;
+  /* Marge inférieure pour espacer le titre des éléments suivants */
+  margin-bottom: 20px;
+  /* Espacement intérieur en bas pour créer un espace sous le texte du titre */
+  padding-bottom: 20px;
+  /* Positionnement relatif pour permettre le positionnement d'éléments décoratifs */
+  position: relative;
+}
+@media (max-width: 575px) {
+ .section-title h2{
+  font-size:2rem;
+ }
+ .section-title p {
+  font-size:0.8rem;
+  line-height: 1.2;
+ }
+}
+
+
+/* Styles pour la ligne décorative sous les titres de niveau 2 */
+.section-title h2:after {
+  /* Contenu vide pour créer une ligne décorative */
+  content: "";
+  /* Positionnement absolu pour placer la ligne sous le titre */
+  position: absolute;
+  /* Affichage en bloc pour la ligne */
+  display: block;
+  /* Largeur de la ligne décorative */
+  width: 30%;
+  /* Hauteur de la ligne décorative */
+  height: 1px;
+  /* Couleur de fond pour la ligne décorative */
+  background: var(--heading-color);
+  /* Positionnement de la ligne à gauche */
+  left: 0;
+  /* Positionnement de la ligne à droite */
+  right: 0;
+  /* Positionnement de la ligne en bas */
+  bottom: 0;
+  /* Centrage de la ligne décorative sous le titre */
+  margin: auto;
+}
+
+
+/* Styles pour les paragraphes dans le titre des sections */
+.section-title p {
+  /* Suppression de la marge inférieure pour un espacement cohérent */
+  margin-bottom: 0;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+
+/*--------------------------------------------------------------
+# Titres de section globales
+--------------------------------------------------------------*/
+
+
+
+
+
+
+/* Section Hero --------------------------------------------------------------------------*/
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.hero-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajuster l'image pour couvrir l'élément sans déformation */
+  transform: translate(-50%, -50%); /* Centrer l'image */
+  z-index: 0;
+ }
+
+
+.hero::before {
+  content: "";
+  position:absolute;
+  top:0%;
+  left:0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+
+.hero-text {
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 700px;
+    color:var(--contrast-color);
+    text-shadow: 4px 4px 4px rgba(33, 23, 11, 1);
+    z-index: 2;
+    border-radius: 20px;
+}
+
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    z-index: 999;
+}
+/*.hero-text h1:hover {
+  transform: scale(1.1)
+}*/
+@media (max-width: 575px) {
+  .hero-text h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+/* Section Hero --------------------------------------------------------------------------*/
+
+
+
+
+/* Section About --------------------------------------------------------------------------*/
+.custum-padding {
+  padding: 20px;
+  margin-top: 0px;
+}
+
+.about .year {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #21170b;
+}
+
+.about img:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+/* Section About --------------------------------------------------------------------------*/
+
+
+
+
+/* Section shop --------------------------------------------------------------------------*/
+.shop {
+  background-color: var(--default-color);
+  color: var(--contrast-color);
+}
+/* Styles pour la ligne décorative sous les titres de niveau 2 */
+.shop .section-title h2:after {
+  background: var(--background-color);
+}
+
+
+
+.product-container {
+  display:flex;
+  gap:30px;
+  margin: 10px;
+}
+
+.product{
+  background-color: var(--contrast-color);
+  border : 3px solid #C4C61C;
+  overflow: hidden;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+  text-align: center; 
+  padding: 10px 0px 15px;
+  font-size: 26px;
+}
+
+
+.product-image {
+  width: 100%;
+  height: auto;
+  padding-bottom: 0px;
+}
+
+
+
+.product-info {
+  padding: 16px;
+  color:var(--default-color);
+  margin: 0px;
+}
+
+
+.product h4 {
+  text-align: center;
+  font-size: 20px;
+}
+.product-info:hover {
+  background-color: var(--heading-color);
+  color:var(--background-color);
+}
+
+.product-info-price {
+  white-space: nowrap;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-button {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: var(--default-color);
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.product-button:hover {
+  background-color: var(--accent-color);
+  color:var(--heading-color);
+  font-weight: 600;
+}
+
+
+
+@media (max-width: 1023px) {
+  .product {
+    font-size: x-small;
+  }
+  .product h3 {
+    font-size: 1rem;
+  }
+  .product h4 {
+    font-size: x-small;
+  }
+  .product-description p {
+    font-size: x-small;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .product-info-price {
+    max-height: 50px;
+    text-align: center;
+    padding: 0px;
+  }
+  .product-info {
+    padding: 1px;
+  }
+  .product-button{
+    align-items: end;
+  }
+
+}
+@media (max-width: 426px) {
+  .product-description {
+    min-height: 370px;
+    align-items: center;
+    padding-top: 10px;
+  }
+ .product {
+  max-width: 145px;
+ }
+}
+@media (max-width: 800px) {
+.product-container{
+  gap: 10px;
+ }
+}
+
+
+
+@media (min-width: 1200px) {
+  .product{
+    width: 450px;
+  }
+  .product h3{
+    min-height: 90px;
+  }
+}
+
+
+
+/* Section shop --------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/* Section Bienfaits--------------------------------------------------------------------------*/
+.bienfaits {
+  /*background-color: var(--contrast-color);*/
+  background-color:var(--background-color);
+}
+
+.bienfaits .img-box-container {
+  padding-top: 0px;
+  padding-bottom: 80px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  clip-path: inset(0 round 15px);
+  height: 400px;
+  width: 100%;
+}
+
+.bienfaits .img-box-container img {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  /*affichage de l'image en tant que block*/
+  display: block; 
+  width: 100%;
+  height: auto;
+  object-fit:cover;
+  z-index: 1;
+  border-radius: 15px;
+  overflow: hidden;
+
+}
+
+@media (max-width: 500px) {
+  .bienfaits  .img-box-container img {
+    object-fit:cover;
+    position: relative;
+    top: 50px;
+
+}
+}
+
+
+.bienfaits .img-box-container:before {
+  content:"";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.bienfaits .img-box-container .content {
+  position: relative;
+  z-index: 3;
+}
+
+.bienfaits-items {
+  background-color: var(--background-color);
+  padding: 5px;
+  margin: 30px 5px  30px 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  color: var(--heading-color);
+}
+
+.bienfaits-items p {
+  padding: 10px;
+}
+
+.bienfaits-items h3 {
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 0 10px 0;
+  position:relative;
+  display: inline-block;
+  transition: ease-in-out 0.6s;
+
+}
+
+
+.bienfaits-items i {
+  color:(in srvb, var(--heading-color), transparent 30%);
+  font-size: 20px;
+  line-height: 2;
+  transition: ease-in-out 0.4s;
+  z-index: 2;
+  position: relative;
+}
+
+.bienfaits-items .readmore {
+  display: inline-block;
+  color:(in srvb, var(--heading-color), transparent 30%);
+  text-decoration: none;
+  padding: 0px 5px 0px 20px;
+  transition: ease-in-out 0.4s;
+}
+
+.bienfaits-items:hover{
+  background-color: var(--heading-color);
+  color: var(--background-color);
+
+}
+/* Section BIenfaits--------------------------------------------------------------------------*/
+
+
+
+
+/* Section fabrication--------------------------------------------------------------------------*/
+.fabrication {
+  background-color: var(--default-color);
+  color: var(--nav-dropdown-color);}
+/* Styles pour la ligne décorative sous les titres de niveau 2 */
+.fabrication .section-title h2:after {
+  background: var(--background-color);
+
+}
+
+.fabrication .portfolio-content {
+ height:100%;
+ overflow: hidden;
+}
+.fabrication .portfolio-content img {
+  transition:0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+
+.fabrication .portfolio-content .portfolio-info {
+  padding: 25px 20px;
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+}
+.fabrication .portfolio-content .portfolio-info  h3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.fabrication .portfolio-content .portfolio-info  h3 a   {
+  color: var(--background-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.fabrication  .readmore  {
+  font-size: 1rem;
+  color: var(--heading-color);
+  transition: 0.3s;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--nav-dropdown-color);
+  padding: 20px;
+  margin: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.fabrication  .readmore:hover  {
+  background-color:var(--surface-color);
+  transform: scale(1.1);
+}
+
+  
+.fabrication .portfolio-content .portfolio-info  h3 a:hover {
+  color: var(--surface-color);
+
+}
+/* Styles pour les images dans le contenu du portfolio lors du survol */
+.fabrication .portfolio-content:hover img {
+  /* Agrandissement de l'image à 110% lors du survol pour un effet de zoom */
+  transform: scale(1.1);
+}
+
+/* Section fabrication--------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/* Section faq--------------------------------------------------------------------------*/
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+
+@media (max-width: 575px) {
+  .carousel-item img {
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+
+.faq-items {
+  margin-top: 0px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+}
+
+
+.faq h3{
+  font-size: large;
+  font-weight: 600;
+  margin: 20px;
+  margin-top: 60px;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0px 10px;
+  margin-top: 10px;
+}
+
+.toggle-dropdown {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding-left: 10px;
+}
+
+.answer p {
+  margin: 10px 50px;
+  line-height: 1.5;
+}
+
+
+
+/* Rotation de l'icône quand la réponse est visible */
+.rotate {
+  transform: rotate(180deg);
+}
+@media (max-width: 575px) {
+  .answer {
+    margin:10px 0px;
+    padding: 0;
+  }
+  .answer p{
+    margin: 0;
+    padding: 0px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Section faq--------------------------------------------------------------------------*/
+
+
+
+/* FOOTER --------------------------------------------------------------------------*/
+
+/* Attention gere le logo dans le footer*/
+
+
+footer {
+    background-color: #C4C61C;
+    position : relative;
+    bottom:0px;
+    align-content: flex-end;
+    width: 100%;   
+    min-height: 100px;
+    overflow: hidden; 
+    font-size: 18 px;
+    color: #21170b;
+    line-height: 1;
+}
+
+footer a {
+    color:var(--heading-color);
+    padding: 15px;
+    text-decoration-line: none;
+}
+
+
+
+.navbar {
+  padding: 0;
+  margin:0;
+  list-style: none;
+  display:flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0;
+}
+.navbar a {
+  display: block;
+  color: var(--heading-color);
+  text-align: center;
+  padding: 2 30px;
+  text-decoration: none;
+  transition: var(--background-color);
+}
+
+
+/*____________________________________________________________*/
+@media (min-width: 1024px) {
+.navmenu-foot {
+  padding: 0;
+
+}
+.logoFOOT {
+  flex-wrap: 1;
+  justify-content: center;
+  line-height: 0;
+}
+
+.logoFOOT img{
+  position: relative;
+  height: 100px;
+}
+
+
+
+.logoFOOT2 img {
+  display:none;
+  visibility: hidden;
+}
+
+
+.circle {
+    width: 20px; /* Largeur du cercle */
+    height: 20px; /* Hauteur du cercle (identique à la largeur) */
+    border-radius: 50%; /* Transformation en cercle */
+    border:1px solid #21170b;
+    margin: 20px 8px;
+
+}
+
+.navmenu-foot ul {
+  padding: 0px;
+  margin-left: 0%;
+  margin-bottom: 0;
+  align-items: center;
+  color:var(--heading-color);
+  display:flex;
+  list-style: none;
+}
+.navmenu-foot li {
+  position: relative;
+}
+
+/* Styles pour les éléments de premier niveau dans le menu de navigation */
+.navmenu-foot>ul>li {
+  /* Empêche le texte de se diviser en plusieurs lignes */
+  white-space: nowrap;
+  /* Espacement intérieur pour chaque élément du menu */
+  padding: 15px 14px;
+}
+
+ /* Styles pour les liens dans le menu de navigation */
+ .navmenu-foot a,
+ .navmenu-foot a:focus {
+   /* Couleur du texte des liens de navigation */
+   color: var(--heading-color);
+   /* Taille de la police des liens */
+   font-size: 15px;
+   /* Espacement intérieur horizontal pour les liens */
+   padding: 0 2px;
+   /* Police utilisée pour les liens de navigation */
+   font-family: var(--nav-font);
+
+   /* Affichage en flexbox pour aligner les éléments horizontalement */
+   display: flex;
+   /* Alignement vertical des éléments */
+   align-items: center;
+   /* Justification de l'espace entre les éléments enfants */
+   justify-content: space-between;
+   /* Empêche le texte de se diviser en plusieurs lignes */
+   white-space: nowrap;
+   /* Transition douce pour les changements de style */
+   transition: 0.3s;
+   /* Positionnement relatif pour permettre des ajustements supplémentaires */
+   position: relative;
+ }
+
+}
+
+
+/*EFFET LIEN DE NAVIGATION FOOTER -------------------------
+
+ /* Styles pour l'effet sous les liens de navigation */
+ .navmenu-foot>ul>li>a:before {
+  /* Aucun contenu texte, juste un élément de style */
+  content: "";
+  /* Positionnement absolu par rapport au lien */
+  position: absolute;
+  /* Hauteur de la ligne sous le lien */
+  height: 2px;
+  /* Positionnement en bas du lien avec un léger décalage */
+  bottom: -6px;
+  /* Alignement à gauche du lien */
+  left: 0;
+  /* Couleur de fond de la ligne, généralement la couleur de survol */
+  background-color: var(--heading-color);
+  /* Ligne cachée par défaut */
+  visibility: hidden;
+  /* Largeur initiale de la ligne (nulle) */
+  width: 0px;
+  /* Transition douce pour la largeur et la visibilité */
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* Styles pour l'affichage de la ligne sous le lien lors du survol ou pour l'élément actif */
+.navmenu-foot a:hover:before,
+.navmenu-foot li:hover>a:before,
+.navmenu-foot .active:before {
+  /* Rendre la ligne visible */
+  visibility: visible;
+  /* Étendre la ligne sur toute la largeur du lien */
+  width: 100%;
+}
+
+/* Styles pour les liens de navigation lors du survol ou pour l'élément actif */
+.navmenu-foot li:hover>a,
+.navmenu-foot .active,
+.navmenu-foot .active:focus {
+  /* Couleur du texte des liens lorsqu'ils sont survolés ou actifs */
+  color: var(--heading-color);
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Section Contact
+--------------------------------------------------------------*/
+.contact{
+  background-color: var(--heading-color);
+  color: var(--background-color);
+}
+/* Conteneur d'information dans la section "Contact" */
+.contact .info-container {
+  /* Couleur de fond pour le conteneur d'information */
+  background-color: var(--background-color);
+  /* Hauteur totale du conteneur */
+  height: 100%;
+  /* Espacement intérieur du conteneur */
+  padding: 20px;
+}
+
+/* Élément d'information individuel dans la section "Contact" */
+.contact .info-item {
+  /* Largeur totale de l'élément */
+  width: 100%;
+  /* Marge inférieure entre les éléments */
+  margin-bottom: 20px;
+  /* Espacement intérieur de l'élément */
+  padding: 20px;
+  /* Couleur du texte */
+  color: var(--heading-color);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  /* Couleur de fond avec une transparence */
+  background-color: color-mix(in srgb, var(--background-color), transparent 5%);
+}
+
+/* Suppression de la marge inférieure pour le dernier élément d'information */
+.contact .info-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Icône à l'intérieur de l'élément d'information */
+.contact .info-item i {
+  /* Taille de la police pour l'icône */
+  font-size: 20px;
+  /* Couleur de l'icône */
+  color: var(--heading-color);
+  /* Couleur de fond de l'icône avec une transparence */
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 80%);
+  /* Dimensions de l'icône */
+  width: 44px;
+  height: 44px;
+  /* Centrer l'icône à l'intérieur du conteneur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Arrondir l'icône pour un effet circulaire */
+  border-radius: 50px;
+  /* Transition douce pour les effets au survol */
+  transition: all 0.3s ease-in-out;
+  /* Marge droite pour espacer l'icône du texte */
+  margin-right: 15px;
+}
+
+
+
+/* Titre de l'élément d'information */
+.contact .info-item h3 {
+  /* Couleur du texte pour le titre */
+  color: var(--heading-color);
+  /* Taille de la police pour le titre */
+  font-size: 20px;
+  /* Suppression de l'espacement interne */
+  padding: 0;
+  /* Taille de la police */
+  font-size: 18px;
+  /* Épaisseur de la police pour le titre */
+  font-weight: 700;
+  /* Marge inférieure pour espacer le titre du paragraphe */
+  margin-bottom: 5px;
+}
+
+.contact .info-item a {
+  color: var(--heading-color);
+text-decoration: none;
+}
+
+.contact .info-item a:hover {
+  color: var(--accent-color);
+}
+/* Texte descriptif dans l'élément d'information */
+.contact .info-item p {
+  /* Suppression de l'espacement interne */
+  padding: 0;
+  /* Suppression de la marge inférieure */
+  margin-bottom: 0;
+  /* Taille de la police pour le texte */
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Styles au survol pour l'icône à l'intérieur de l'élément d'information */
+.contact .info-item:hover i {
+  /* Changement de la couleur de fond au survol */
+  background: var(--nav-dropdown-background-color);
+  /* Changement de la couleur de l'icône au survol */
+  color: var(--accent-color);
+}
+
+
+
+/* Formulaire de contact PHP */
+.contact .php-email-form {
+  /*couleur de fond du form*/
+  background-color:var(--background-color);
+  /* Ombre portée pour donner de la profondeur */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  /* Largeur et hauteur du formulaire */
+  width: 100%;
+  height: 100%;
+  /* Espacement interne du formulaire */
+  padding: 30px;
+}
+
+/* Styles pour les champs de texte et email ainsi que la zone de texte */
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form input[type=tel],
+.contact .php-email-form textarea {
+  /* Taille de la police des champs */
+  font-size: 14px;
+  /* Espacement interne pour les champs */
+  padding: 10px 15px;
+  /* Suppression de l'ombre portée par défaut */
+  box-shadow: none;
+  /* Bordures non arrondies */
+  border-radius: 0;
+  /* Couleur du texte à l'intérieur des champs */
+  color: var(--heading-color);
+  /* Couleur de fond des champs */
+  background-color: var(--background-color);
+  /* Couleur de la bordure */
+  border-color: color-mix(in srgb, var(--heading-color), transparent 80%);
+}
+
+/* Styles pour les champs de texte, email et la zone de texte lorsqu'ils sont focalisés */
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type=tel]:focus,
+.contact .php-email-form textarea:focus {
+  /* Changement de la couleur de la bordure lors du focus */
+  border-color: var(--accent-color);
+}
+
+/* Styles pour les espaces réservés (placeholders) dans les champs de texte, email et zone de texte */
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type=tel]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  /* Couleur des placeholders avec une légère transparence */
+  color: color-mix(in srgb, var(--heading-color), transparent 30%);
+}
+
+/* Styles pour le bouton de soumission du formulaire */
+.contact .php-email-form button[type=submit] {
+  /* Couleur du texte du bouton */
+  color: var(--contrast-color);
+  /* Couleur de fond du bouton */
+  background: var(--heading-color);
+  /* Suppression de la bordure */
+  border: 0;
+  /* Espacement interne du bouton */
+  padding:10px 30px;
+  /* Transition douce pour les interactions utilisateur */
+  transition: 0.4s;
+  /* Bordures arrondies pour un effet de bouton pillule */
+  border-radius: 50px;
+  margin: 10px;
+  
+}
+
+
+
+/* Styles au survol pour le bouton de soumission du formulaire */
+.contact .php-email-form button[type=submit]:hover {
+  /* Changement de la couleur de fond au survol avec transparence */
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+
+
+.contact .php-email-form {
+  color: var(--heading-color);
+  padding-bottom:10px ;
+}
+
+
+
+
+/* Messages du formulaire PHP Email
+------------------------------*/
+/* Styles pour le message d'erreur du formulaire PHP */
+.php-email-form .error-message {
+  /* Le message est caché par défaut */
+  display: none;
+  /* Couleur de fond rouge pour indiquer une erreur */
+  background: #df1529;
+  /* Couleur blanche pour le texte */
+  color: #ffffff;
+  /* Alignement du texte à gauche */
+  text-align: left;
+  /* Espacement intérieur autour du message */
+  padding: 15px;
+  /* Marge en bas du message pour l'espacement */
+  margin-bottom: 24px;
+  /* Texte en gras pour souligner l'importance */
+  font-weight: 600;
+}
+
+/* Styles pour le message de confirmation d'envoi du formulaire PHP */
+.php-email-form .sent-message {
+  /* Le message est caché par défaut */
+  display: none;
+  /* Couleur blanche pour le texte */
+  color: #ffffff;
+  /* Couleur de fond verte pour indiquer le succès */
+  background: #059652;
+  /* Alignement du texte au centre */
+  text-align: center;
+  /* Espacement intérieur autour du message */
+  padding: 15px;
+  /* Marge en bas du message pour l'espacement */
+  margin-bottom: 24px;
+  /* Texte en gras pour souligner l'importance */
+  font-weight: 600;
+}
+
+/* Styles pour l'indicateur de chargement lors de l'envoi du formulaire PHP */
+.php-email-form .loading {
+  /* L'indicateur est caché par défaut */
+  display: none;
+  /* Couleur de fond basée sur la couleur de surface définie */
+  background: var(--surface-color);
+  /* Alignement du texte au centre */
+  text-align: center;
+  /* Espacement intérieur autour de l'indicateur */
+  padding: 15px;
+  /* Marge en bas de l'indicateur pour l'espacement */
+  margin-bottom: 24px;
+}
+
+/* Styles pour l'animation de l'indicateur de chargement */
+.php-email-form .loading:before {
+  /* Aucun contenu texte, juste un élément de style */
+  content: "";
+  /* Affichage en ligne de l'élément */
+  display: inline-block;
+  /* Bordures arrondies pour créer un cercle */
+  border-radius: 50%;
+  /* Largeur du cercle de chargement */
+  width: 24px;
+  /* Hauteur du cercle de chargement */
+  height: 24px;
+  /* Marge pour espacer l'indicateur des autres éléments */
+  margin: 0 10px -6px 0;
+  /* Bordure du cercle avec une couleur d'accent */
+  border: 3px solid var(--accent-color);
+  /* Bordure supérieure avec la couleur de surface pour l'effet de rotation */
+  border-top-color: var(--surface-color);
+  /* Animation de rotation du cercle */
+  animation: php-email-form-loading 1s linear infinite;
+}
+
+/* Définition de l'animation pour l'indicateur de chargement */
+@keyframes php-email-form-loading {
+  /* Début de l'animation : aucune rotation */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* Fin de l'animation : rotation complète de 360 degrés */
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Messages du formulaire PHP Email
+------------------------------*/
+
+.carte {
+  margin: 10px;
+  text-align: center;
+}
+.carte h2 {
+  padding: 40px 0px 0px 0px;
+}
+.carte p{
+text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Section Contact
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Titres globaux de pages et fil d'Ariane
+--------------------------------------------------------------*/
+/* Styles pour la section du titre de la page */
+.page-title {
+  /* Définition de la couleur de fond pour la section du titre de la page */
+  --background-color: var(--background-color);
+  /* Définition de la couleur par défaut pour le texte */
+  --default-color: var(--heading-color);
+  /* Définition de la couleur des titres pour la section */
+  --heading-color:var(--heading-color);
+  /* Application de la couleur par défaut au texte de la section */
+  color: var(var(--heading-color));
+  /* Application de la couleur de fond à la section */
+  background-color: var(--background-color);
+  /* Positionnement relatif pour permettre le positionnement d'éléments enfants si nécessaire */
+  position: relative;
+}
+
+
+.page-title .product-button {
+  background-color:#21170b;
+}
+
+.page-title .product-button:hover {
+  background-color:var(--accent-color);
+  color: #21170b;
+}
+
+/* Styles pour l'en-tête de la section du titre de la page */
+.page-title .heading {
+  /* Espacement intérieur supérieur et inférieur pour l'en-tête */
+  padding: 100px 0 0px 0;
+  /* Bordure supérieure subtile avec une transparence de 90% */
+  border-top: 1px solid color-mix(in srgb, var(--background-color), transparent 0%);
+}
+
+
+/* Styles pour le titre principal (h1) dans l'en-tête de la section du titre de la page */
+.page-title .heading h1 {
+  /* Taille de la police pour le titre principal */
+  font-size: 38px;
+  /* Poids de la police pour rendre le titre en gras */
+  font-weight: 400;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 764px){
+  .page-title .heading h1 {
+    font-size: 95%;
+    font-weight: 600;
+  }
+}
+
+/* Styles pour la navigation dans la section du titre de la page */
+.page-title nav {
+  box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  /* Espacement intérieur supérieur et inférieur pour la navigation */
+  padding: 20px 0;
+}
+
+
+/* Styles pour la liste de navigation (chemin de navigation) */
+.page-title nav ol {
+  /* Affichage en flexbox pour organiser les éléments horizontalement */
+  display: flex;
+  /* Permet à la liste de s'adapter sur plusieurs lignes si nécessaire */
+  flex-wrap: wrap;
+  /* Suppression des puces de liste */
+  list-style: none;
+  /* Suppression des marges extérieures */
+  margin: 0;
+  /* Taille de la police pour les éléments de la liste */
+  font-size: 16px;
+  /* Poids de la police pour rendre le texte en semi-gras */
+  font-weight: 400;
+}
+
+
+/* Styles pour les liens dans la liste de navigation */
+.page-title nav ol a {
+  /* Couleur du texte des liens avec une transparence de 50% */
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
+
+/* Styles pour les liens dans la liste de navigation lors du survol */
+.page-title nav ol a:hover {
+  /* Changement de la couleur du texte des liens lors du survol pour améliorer la visibilité */
+  color: var(--default-color);
+
+}
+
+
+/* Styles pour les éléments de la liste de navigation suivants (non-premiers) */
+.page-title nav ol li+li {
+  /* Espacement à gauche pour séparer les éléments de la liste */
+  padding-left: 10px;
+}
+
+
+/* Styles pour l'ajout d'un séparateur entre les éléments de la liste de navigation */
+.page-title nav ol li+li::before {
+  /* Contenu du séparateur entre les éléments de la liste */
+  content: "/";
+  /* Affichage en ligne du séparateur */
+  display: inline-block;
+  /* Espacement à droite du séparateur */
+  padding-right: 10px;
+  /* Couleur du séparateur avec une transparence de 50% */
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
+
+/*--------------------------------------------------------------
+# Titres globaux de pages et fil d'Ariane
+--------------------------------------------------------------*/
+
+
+
+/*_________________________________________________________________*/
+
+/* MENU Navigation mobile FOOTER __________________________________*/
+
+
+  /* Styles pour les écrans plus petits, jusqu'à 1199px de largeur */
+  @media (max-width: 1023px) {
+   .navbar {
+    font-size: x-small;
+    padding: 3px;
+   }
+   .navbar a {
+    padding:2px;
+   }
+  
+   /* Styles pour les listes de navigation dans le menu */
+  .navmenu-foot ul {
+    /* Masquer le menu par défaut (utilisé pour les menus mobiles) */
+    display: none;
+  }
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border:1px solid #21170b;
+  margin: 7px 5px ;
+}
+
+.logoFOOT2 img {
+  height: 60px;
+}
+
+}
+
+.demi-ligne {
+  border-top: 1px solid #21170b; /* Épaisseur et couleur de la ligne */
+  width: 50%; /* Largeur de la ligne (demi-largeur du conteneur) */
+  margin: 0 auto; /* Centre la ligne horizontalement */
+  margin-top: 0px;
+}
+
+  /*--------------------------------------------------------------
+  # Menu de navigation FOOTER 
+  --------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+  # Page de DEtails produits
+  --------------------------------------------------------------*/
+
+.product-detail-description {
+  background-color: var(--background-color);
+  padding: 20px 00px;
+  margin: 70px;
+  justify-content: center;
+  }
+
+
+.product-detail-description h2, p {
+  padding: 20px 10px 0px 0px;
+}
+
+.product-detail-description  h3{
+  padding: 20px 10px 0px 0px;
+}
+
+.product-detail-description .row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+}
+
+
+.product-detail-img {
+  max-width: 300px;
+  height: auto;
+  display:block;
+  padding: 23px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.product-detail-img:hover{
+  transform:scale(1.1);
+  transition: 0.3s;
+}
+
+.product-detail-description .livraison {
+ color: var(--heading-color);
+
+}
+
+.product-detail-description .livraison:hover {
+  color: var(--accent-color);
+ }
+
+ #commander li {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  padding-bottom: 60px;
+ }
+
+ #commander li:last-child {
+ padding-bottom: 0px;
+ }
+
+ #commander ul {
+  padding: 0px;
+ }
+
+#quantite {
+  width: 50;
+  border:solid 1px #21170b;
+  margin-left: 30px;
+  padding: 3px;
+  color: #21170b;
+  font-family: var(--nav-dropdown-background-color);
+}
+
+.bta-shop {
+  margin-left: 20px;
+  background-color: #21170b;
+  color: #fde09c;
+  padding: 3px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .product-detail-description {
+    font-size: 16px;
+    text-align: center;
+  }
+  .product-detail-description h3 {
+    padding-top: 10px;
+    font-size: 1,5rem;
+  }
+  .product-detail-description h4 {
+    padding-top: 10px;
+    font-size: 1rem;
+  }
+  .product-detail-description p {
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 15px;
+  }
+  .product-detail-description .quantite-p  {
+    padding-top: 10px;
+    font-size: 1,5rem;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+  .product-detail-description .bta-shop {
+    margin-top: 10px;
+    font-size: 1,5rem;
+    justify-content: space-around;
+    text-align: center;
+  }
+  #commander li {
+    display: block;
+  }
+  .product-detail-description .prix {
+    padding-top: 10px;
+    font-size: 1,5rem;
+    justify-content: space-around;
+    text-align: center;
+    text-wrap: nowrap;
+  }
+}
+
+.details-produit1-page{
+  background-color:var(--background-color);
+}
+/*--------------------------------------------------------------
+  # Page de BIENFAITS-details
+  --------------------------------------------------------------*/
+
+
+
+.bienfaits-page-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.bienfaits-page-hero-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajuster l'image pour couvrir l'élément sans déformation */
+  transform: translate(-50%, -50%); /* Centrer l'image */
+  z-index: 0;
+ }
+
+.bienfaits-page-hero-text {
+  position:absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 700px;
+  color:var(--contrast-color);
+  text-shadow: 4px 4px 4px rgba(33, 23, 11, 1);
+  z-index: 2;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.bienfaits-page-hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+  z-index: 999;
+}
+
+.bienfaits-page-hero-text h1:hover {
+  transform: scale(1.5);
+ color: var(--accent-color);
+  z-index: 999;
+}
+
+@media (max-width: 575px) {
+  .bienfaits-page-hero-text h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+}
+#bienfaits-details-page {
+  align-items: center;
+  background-color: var(--background-color);
+  margin-top: px;
+}
+
+#bienfaits-details-page h2 {
+  text-align: center;
+}
+#bienfaits-details-page .bienfaits-items {
+  background-color: var(--background-color);
+}
+#bienfaits-details-page .bienfaits-items:hover {
+  background-color: var(--heading-color);
+}
+
+.bienfaits-page-items img {
+  margin-right: 15px;
+  max-width: 300px;
+  height: auto;
+  flex:1 1 300px;
+}
+@media (min-width: 800px){
+.bienfaits-page-items img:hover {
+  transform:scale(1.1) ; 
+  transition: 0.3s ease-in-out;
+}
+}
+@media (max-width: 799px){
+  .bienfaits-page-items img{
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+  .bienfaits-page-items img:hover {
+ transform: scale(0) ;
+ transform: 0.3s;
+}
+}
+
+
+.bienfaits-page-items {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.bienfaits-page-items p {
+  flex :2 1 500px;
+  font-weight: 200;
+  font-family: var(--nav-font);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (max-width: 800px){
+  .bienfaits-page-items {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bienfaits-page-items img {
+    max-width: 80%;
+  }
+}
+
+.bienfaits-items-titre{
+  text-align: center;
+  padding: 20px;
+}
+
+.bienfaits-details {
+  background-color: var(--heading-color);
+  color: var(--background-color);
+}
+
+#usage-externe {
+  background-color: var(--contrast-color);
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+
+
+
+/*___________ ANIMATIONS TITRES_____ ligne par ligne_______
+
+
+      /* Style pour animer et changer les couleurs des lettres */
+      .animated-line {
+        display: inline-block;
+        opacity: 0; /*initialement invisible*/
+        animation: colorchangeline 9s forwards infinite;
+        animation-duration: 4s;
+    }
+
+
+    @keyframes colorchangeline {
+      0% { color: var(--bs-primary); opacity: 0; }
+      20% { color: var(--surface-color); opacity: 1; }
+      90% {color: red;  opacity: 0 ;}
+    }
+
+
+       /* Ajouter un délai différent à chaque ligne pour l'effet */
+      .line1 { animation-delay: 0s; }
+      .line2 { animation-delay: 2s; }
+      .line3 { animation-delay: 1s; }
+
+
+
+/*_____________Animation Boutons_______________________________
+
+
+
+
+/*
+CSS @property et le nouveau style
+https://ryanmulligan.dev/blog/css-property-new-style/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap");*/
+
+:root {
+  --shiny-cta-bg: red;
+  --shiny-cta-bg-subtle: var(--accent-color);
+  --shiny-cta-fg: var(--background-color);
+  --shiny-cta-highlight: yellow;
+  --shiny-cta-highlight-subtle: var(--default-color);
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --gradient-angle-offset {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --gradient-percent {
+  syntax: "<percentage>";
+  initial-value: 5%;
+  inherits: false;
+}
+
+@property --gradient-shine {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+.shiny-cta {
+  --animation: gradient-angle linear infinite;
+  --duration: 3s;
+  --shadow-size: 2px;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline-offset: 4px;
+  padding: 1.25rem 2.5rem;
+  font-family: inherit;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  border-radius: 360px;
+  color: var(--shiny-cta-fg);
+  background: linear-gradient(var(--shiny-cta-bg), var(--shiny-cta-bg))
+      padding-box,
+    conic-gradient(
+        from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+        transparent,
+        var(--shiny-cta-highlight) var(--gradient-percent),
+        var(--gradient-shine) calc(var(--gradient-percent) * 2),
+        var(--shiny-cta-highlight) calc(var(--gradient-percent) * 3),
+        transparent calc(var(--gradient-percent) * 4)
+      )
+      border-box;
+  box-shadow: inset 0 0 0 1px var(--shiny-cta-bg-subtle);
+
+  &::before,
+  &::after,
+  span::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+  }
+
+  &:active {
+    translate: 0 1px;
+  }
+}
+
+/* Motif à pois */
+.shiny-cta::before {
+  --size: calc(100% - var(--shadow-size) * 3);
+  --position: 2px;
+  --space: calc(var(--position) * 2);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(
+      circle at var(--position) var(--position),
+      white calc(var(--position) / 4),
+      transparent 0
+    )
+    padding-box;
+  background-size: var(--space) var(--space);
+  background-repeat: space;
+  mask-image: conic-gradient(
+    from calc(var(--gradient-angle) + 45deg),
+    black,
+    transparent 10% 90%,
+    black
+  );
+  border-radius: inherit;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Scintillement intérieur */
+.shiny-cta::after {
+  --animation: shimmer linear infinite;
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(
+    -50deg,
+    transparent,
+    var(--shiny-cta-highlight),
+    transparent
+  );
+  mask-image: radial-gradient(circle at bottom, transparent 40%, black);
+  opacity: 0.6;
+}
+
+.shiny-cta span {
+  z-index: 1;
+
+  &::before {
+    --size: calc(100% + 1rem);
+    width: var(--size);
+    height: var(--size);
+    box-shadow: inset 0 -1ex 2rem 4px var(--shiny-cta-highlight);
+    opacity: 0;
+  }
+}
+
+/* Animer */
+.shiny-cta {
+  --transition: 800ms cubic-bezier(0.25, 1, 0.5, 1);
+  transition: var(--transition);
+  transition-property: --gradient-angle-offset, --gradient-percent,
+    --gradient-shine;
+
+  &,
+  &::before,
+  &::after {
+    animation: var(--animation) var(--duration),
+      var(--animation) calc(var(--duration) / 0.4) reverse paused;
+    animation-composition: add;
+  }
+
+  span::before {
+    transition: opacity var(--transition);
+    animation: calc(var(--duration) * 1.5) breathe linear infinite;
+  }
+}
+
+.shiny-cta:is(:hover, :focus-visible) {
+  --gradient-percent: 20%;
+  --gradient-angle-offset: 95deg;
+  --gradient-shine: var(--shiny-cta-highlight-subtle);
+
+  &,
+  &::before,
+  &::after {
+    animation-play-state: running;
+  }
+
+  span::before {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient-angle {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes breathe {
+  from,
+  to {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+}
+
+
+/*__________________Mentions legales_____________*/
+
+.texte {
+  margin: 8%;
+  padding: 1px;
+  justify-content: space-around;
+}
+
+ .texte p {
+  justify-content: center;
+  text-align: left;
+  line-height: 1.3;
+  padding-bottom: 6%;
+ }
+
+ @media (max-width: 1023px){
+  .texte p {
+    font-size: 80%;
+  }
+  .texte h2 {
+    font-size: 95%;
+  }
+ }
+
+ .mention-page {
+  background-color:var(--background-color);
+ }
+
