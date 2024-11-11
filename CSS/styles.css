@@ -1,9 +1,10 @@
+
 F8EBE0/* Color Theme Swatches in Hex */
-.color-theme_olives-1955275_1920-patrick-gantz-pixabay-1-hex { color: #262002; }
+.color-theme_olives-1955275_1920-patrick-gantz-pixabay-1-hex { color: #21170b; }
 .color-theme_olives-1955275_1920-patrick-gantz-pixabay-2-hex { color: #C4C61C; }
-.color-theme_olives-1955275_1920-patrick-gantz-pixabay-3-hex { color: #EBD091; }
-.color-theme_olives-1955275_1920-patrick-gantz-pixabay-4-hex { color: #F2D6BD; }
-.color-theme_olives-1955275_1920-patrick-gantz-pixabay-5-hex { color: #F0ED86; }
+.color-theme_olives-1955275_1920-patrick-gantz-pixabay-3-hex { color: #fde09c; }
+.color-theme_olives-1955275_1920-patrick-gantz-pixabay-4-hex { color: #f8ebe0; }
+.color-theme_olives-1955275_1920-patrick-gantz-pixabay-5-hex { color: #feffdd; }
 
 
 /* Polices d'écriture utilisées pour le site. */
@@ -18,14 +19,14 @@ F8EBE0/* Color Theme Swatches in Hex */
 Les mettre à jour ici changera le schéma de couleurs de tout le site */
 :root { 
     --background-color: #f8ebe0; /* Couleur de fond pour tout le site, y compris les sections individuelles */
-    --default-color: #262002; /* Couleur par défaut utilisée pour la majorité du contenu textuel sur tout le site */
-    --heading-color: #262002; /* Couleur pour les titres, sous-titres et titres sur tout le site */
+    --default-color: #21170b; /* Couleur par défaut utilisée pour la majorité du contenu textuel sur tout le site */
+    --heading-color: #21170b; /* Couleur pour les titres, sous-titres et titres sur tout le site */
     --accent-color: #C4C61C; /* Couleur d'accent qui représente votre marque sur le site. 
                               Elle est utilisée pour les boutons, les liens et autres éléments qui doivent se démarquer */
     --surface-color: #fde09c; /* La couleur de surface est utilisée comme fond pour les éléments 
                                 encadrés dans les sections, tels que les cartes, les boîtes d'icônes 
                                 ou d'autres éléments nécessitant une séparation visuelle du fond global. */
-    --contrast-color: #feedde; /* Couleur de contraste pour le texte, assurant la lisibilité 
+    --contrast-color: #feffdd; /* Couleur de contraste pour le texte, assurant la lisibilité 
                                  contre les fonds de couleur d'accent, de titre ou par défaut. */                      
   }
 
@@ -36,7 +37,7 @@ Elles sont séparées des couleurs globales pour permettre plus d'options de per
     --nav-color:#f8ebe0;  /* Couleur par défaut des liens du menu de navigation principal */
     --nav-hover-color: #f8ebe0; /* Appliqué aux liens du menu de navigation principal lorsqu'ils sont survolés ou actifs */
     --nav-mobile-background-color: #C4C61C; /* Utilisé comme couleur de fond pour le menu de navigation mobile */
-    --nav-dropdown-background-color: #262002; /* Utilisé comme couleur de fond pour les éléments déroulants 
+    --nav-dropdown-background-color: #21170b; /* Utilisé comme couleur de fond pour les éléments déroulants 
                                                 qui apparaissent lors du survol des éléments de navigation principaux */
     --nav-dropdown-color: #f8ebe0; /* Utilisé pour les liens de navigation des éléments déroulants 
                                      dans le menu de navigation. */
@@ -63,7 +64,7 @@ Elles sont séparées des couleurs globales pour permettre plus d'options de per
 --------------------------------------------------------------*/
 
 
-/* Styles globaux pour le corps de la page, mode normal et mode sombre. */
+/* Styles globaux pour le corps de la page en mode normal */
 .body {
     /* Couleur par défaut du texte */
     color: var(--default-color);
@@ -140,9 +141,9 @@ h6 {
 /* Styles pour l'en-tête global du site */
 .header {
     /* Couleur de fond pour l'en-tête */
-    --background-color: #262002;
+    --background-color: #21170b;
     /* Couleur des titres dans l'en-tête */
-    --heading-color: #EBD091;
+    --heading-color: #fde09c;
    /* HAuteur de la barre*/
     height: 70px;
     /* Couleur par défaut du texte dans l'en-tête */
@@ -185,7 +186,7 @@ h6 {
   }
   
   header nav a {
-    color: #EBD091;
+    color: #fde09c;
     text-decoration-line: none;
 }
 
@@ -638,7 +639,7 @@ h6 {
   /* Styles pour l'icône de bascule du menu mobile lorsque le menu est actif */
   .mobile-nav-active .mobile-nav-toggle {
     /* Couleur blanche pour l'icône de bascule du menu mobile */
-    color: #F2D6BD;
+    color: #f8ebe0;
     /* Positionnement absolu pour l'icône de bascule */
     position: absolute;
     /* Taille de la police pour l'icône de bascule lorsqu'elle est active */
@@ -697,7 +698,7 @@ h6 {
     height: 30px;
     background-color:var(--contrast-color);
     border-radius: 50px;
-    color:  #262002;
+    color:  #21170b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -706,7 +707,7 @@ h6 {
     transition:  0.3s;
 }
 .button-nav:hover {
-  background-color: #262002;
+  background-color: #21170b;
   color: var(--contrast-color);
 }
 @media (max-width: 1023px) {
@@ -974,7 +975,7 @@ section,
     text-align: center;
     max-width: 700px;
     color:var(--contrast-color);
-    text-shadow: 4px 4px 4px rgba(38, 32, 2, 1);
+    text-shadow: 4px 4px 4px rgba(33, 23, 11, 1);
     z-index: 2;
     border-radius: 20px;
 }
@@ -1008,11 +1009,12 @@ section,
 .about .year {
   font-size: 4rem;
   font-weight: bold;
-  color: #333;
+  color: #21170b;
 }
 
 .about img:hover{
   transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 /* Section About --------------------------------------------------------------------------*/
 
@@ -1171,8 +1173,8 @@ section,
 
 /* Section Bienfaits--------------------------------------------------------------------------*/
 .bienfaits {
-  background-color: var(--contrast-color);
-  /*background-color:var(--background-color);*/
+  /*background-color: var(--contrast-color);*/
+  background-color:var(--background-color);
 }
 
 .bienfaits .img-box-container {
@@ -1201,14 +1203,14 @@ section,
 
 }
 
-/*@media (max-width: 500px) {
+@media (max-width: 500px) {
   .bienfaits  .img-box-container img {
     object-fit:cover;
     position: relative;
     top: 50px;
 
 }
-}*/
+}
 
 
 .bienfaits .img-box-container:before {
@@ -1224,7 +1226,7 @@ section,
 }
 
 .bienfaits-items {
-  background-color: var(--contrast-color);
+  background-color: var(--background-color);
   padding: 5px;
   margin: 30px 5px  30px 5px;
   border-radius: 5px;
@@ -1270,10 +1272,9 @@ section,
   color: var(--background-color);
 
 }
-
-
-
 /* Section BIenfaits--------------------------------------------------------------------------*/
+
+
 
 
 /* Section fabrication--------------------------------------------------------------------------*/
@@ -1445,7 +1446,7 @@ footer {
     min-height: 100px;
     overflow: hidden; 
     font-size: 18 px;
-    color: #262002;
+    color: #21170b;
     line-height: 1;
 }
 
@@ -1507,7 +1508,7 @@ footer a {
     width: 20px; /* Largeur du cercle */
     height: 20px; /* Hauteur du cercle (identique à la largeur) */
     border-radius: 50%; /* Transformation en cercle */
-    border:1px solid #262002;
+    border:1px solid #21170b;
     margin: 20px 8px;
 
 }
@@ -1915,7 +1916,7 @@ text-align: center;
 /* Styles pour la section du titre de la page */
 .page-title {
   /* Définition de la couleur de fond pour la section du titre de la page */
-  --background-color: var(--contrast-color);
+  --background-color: var(--background-color);
   /* Définition de la couleur par défaut pour le texte */
   --default-color: var(--heading-color);
   /* Définition de la couleur des titres pour la section */
@@ -1930,12 +1931,12 @@ text-align: center;
 
 
 .page-title .product-button {
-  background-color:#262002;
+  background-color:#21170b;
 }
 
 .page-title .product-button:hover {
   background-color:var(--accent-color);
-  color: #262002;
+  color: #21170b;
 }
 
 /* Styles pour l'en-tête de la section du titre de la page */
@@ -2053,7 +2054,7 @@ text-align: center;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border:1px solid #262002;
+  border:1px solid #21170b;
   margin: 7px 5px ;
 }
 
@@ -2064,7 +2065,7 @@ text-align: center;
 }
 
 .demi-ligne {
-  border-top: 1px solid #262002; /* Épaisseur et couleur de la ligne */
+  border-top: 1px solid #21170b; /* Épaisseur et couleur de la ligne */
   width: 50%; /* Largeur de la ligne (demi-largeur du conteneur) */
   margin: 0 auto; /* Centre la ligne horizontalement */
   margin-top: 0px;
@@ -2080,7 +2081,7 @@ text-align: center;
   --------------------------------------------------------------*/
 
 .product-detail-description {
-  background-color: var(--contrast-color);
+  background-color: var(--background-color);
   padding: 20px 00px;
   margin: 70px;
   justify-content: center;
@@ -2144,17 +2145,17 @@ text-align: center;
 
 #quantite {
   width: 50;
-  border:solid 1px #262002;
+  border:solid 1px #21170b;
   margin-left: 30px;
   padding: 3px;
-  color: #262002;
+  color: #21170b;
   font-family: var(--nav-dropdown-background-color);
 }
 
 .bta-shop {
   margin-left: 20px;
-  background-color: #262002;
-  color: #ebd091;
+  background-color: #21170b;
+  color: #fde09c;
   padding: 3px 10px;
   border-radius: 5px;
   text-align: center;
@@ -2204,7 +2205,7 @@ text-align: center;
 }
 
 .details-produit1-page{
-  background-color: #f8ebe0;
+  background-color:var(--background-color);
 }
 /*--------------------------------------------------------------
   # Page de BIENFAITS-details
@@ -2239,7 +2240,7 @@ text-align: center;
   text-align: center;
   max-width: 700px;
   color:var(--contrast-color);
-  text-shadow: 4px 4px 4px rgba(38, 32, 2, 1);
+  text-shadow: 4px 4px 4px rgba(33, 23, 11, 1);
   z-index: 2;
   border-radius: 20px;
   margin-top: 20px;
@@ -2265,14 +2266,19 @@ text-align: center;
 }
 #bienfaits-details-page {
   align-items: center;
-  background-color: var(--contrast-color);
+  background-color: var(--background-color);
   margin-top: px;
 }
 
 #bienfaits-details-page h2 {
   text-align: center;
 }
-
+#bienfaits-details-page .bienfaits-items {
+  background-color: var(--background-color);
+}
+#bienfaits-details-page .bienfaits-items:hover {
+  background-color: var(--heading-color);
+}
 
 .bienfaits-page-items img {
   margin-right: 15px;
@@ -2282,7 +2288,7 @@ text-align: center;
 }
 @media (min-width: 800px){
 .bienfaits-page-items img:hover {
-  transform:scale(1.5) translate(50%, 0%); 
+  transform:scale(1.1) ; 
   transition: 0.3s ease-in-out;
 }
 }
@@ -2294,7 +2300,7 @@ text-align: center;
     justify-content: center;
   }
   .bienfaits-page-items img:hover {
- transform: scale(1.2) ;
+ transform: scale(0) ;
  transform: 0.3s;
 }
 }
@@ -2306,6 +2312,7 @@ text-align: center;
   align-items: center;
   gap: 20px;
   padding: 20px;
+
 }
 
 .bienfaits-page-items p {
@@ -2598,6 +2605,5 @@ https://ryanmulligan.dev/blog/css-property-new-style/
  }
 
  .mention-page {
-  background-color: #f8ebe0;
+  background-color:var(--background-color);
  }
-
